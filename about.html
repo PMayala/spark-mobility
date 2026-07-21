@@ -449,6 +449,8 @@ footer{border-top:1px solid var(--line);padding:64px 0 34px;margin-top:clamp(72p
 
 
 
+
+
 /* ---------- Home hero & components ---------- */
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;align-items:start}}
@@ -986,7 +988,969 @@ footer{background:radial-gradient(46% 42% at 100% 0%,rgba(30,136,229,.10),transp
   </div>
 </footer>
 <button class="toTop" id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
-<script src="/assets/js/i18n.js" defer></script>
-<script src="/assets/js/main.js" defer></script>
+<script>/* Spark Mobility — full-content translations.
+   Format: "English source" : ["Français", "Kinyarwanda"]
+   FR reviewed for fluency; RW written plainly — please have a native speaker review before launch.
+   Extend freely: any exact-match visible string added here is translated automatically. */
+window.SPARK_T = {
+/* ---------- chrome ---------- */
+"Ride":["Trajets","Urugendo"],
+"Drivers":["Chauffeurs","Abashoferi"],
+"Fleet":["Flotte","Ibinyabiziga"],
+"Safety":["Sécurité","Umutekano"],
+"Impact":["Impact","Ibidukikije"],
+"About":["À propos","Abo turi bo"],
+"Contact":["Contact","Twandikire"],
+"Get the app":["Télécharger l'app","Kuramo App"],
+"Become a driver":["Devenir chauffeur","Ba umushoferi"],
+"Support":["Assistance","Ubufasha"],
+"Emergency":["Urgence","Ubutabazi"],
+"Drive":["Conduire","Gutwara"],
+"Company":["Entreprise","Ikigo"],
+"Subscribe":["S'abonner","Iyandikishe"],
+"How it works":["Comment ça marche","Uko bikorwa"],
+"Spark Moto":["Spark Moto","Spark Moto"],
+"Spark EV":["Spark EV","Spark EV"],
+"Drive to own":["Conduire pour posséder","Twara ube nyirayo"],
+"Own-EV partner":["Partenaire véhicule propre","Ufite ikinyabiziga cye"],
+"Earnings calculator":["Calculateur de revenus","Kubara inyungu"],
+"Apply":["Postuler","Saba"],
+"Coverage":["Couverture","Aho dukorera"],
+"Terms":["Conditions","Amasezerano"],
+"Privacy":["Confidentialité","Ibanga"],
+"Terms & Conditions":["Conditions générales","Amasezerano y'ikoreshwa"],
+"Privacy Policy":["Politique de confidentialité","Politiki y'ibanga"],
+"Rwanda's all-electric ride network. Ride clean, drive to own, and help move Kigali into its electric future.":["Le réseau de transport 100 % électrique du Rwanda. Voyagez propre, conduisez pour posséder, et faites avancer Kigali vers son avenir électrique.","Urusobe rw'ingendo z'amashanyarazi 100% mu Rwanda. Genda neza, twara ube nyirayo, ufashe Kigali kujya mu bihe by'amashanyarazi."],
+
+/* ---------- home ---------- */
+"100% Electric · Rwanda":["100 % électrique · Rwanda","100% Amashanyarazi · u Rwanda"],
+"Spark is Rwanda's all-electric ride network — professional drivers, upfront fares, GPS-tracked trips, and a real path to vehicle ownership.":["Spark est le réseau de transport 100 % électrique du Rwanda — chauffeurs professionnels, tarifs annoncés à l'avance, trajets suivis par GPS et un vrai chemin vers la propriété du véhicule.","Spark ni urusobe rw'ingendo z'amashanyarazi mu Rwanda — abashoferi b'umwuga, ibiciro bigaragara mbere, ingendo zikurikiranwa na GPS, n'inzira nyayo yo kuba nyir'ikinyabiziga."],
+"1,000+ active drivers":["1 000+ chauffeurs actifs","Abashoferi 1.000+ bakora"],
+"Avg pickup under 5 min":["Prise en charge < 5 min","Kugufata munsi y'iminota 5"],
+"3 districts":["3 districts","Uturere 3"],
+"Live in Kigali":["En direct à Kigali","Birakora i Kigali"],
+"Zero-emission fleet":["Flotte zéro émission","Ibinyabiziga bidahumanya"],
+"Every Spark trip is fully electric — quieter streets, cleaner air, and drivers who own their future.":["Chaque trajet Spark est 100 % électrique — des rues plus calmes, un air plus pur, et des chauffeurs propriétaires de leur avenir.","Buri rugendo rwa Spark rukoresha amashanyarazi gusa — imihanda ituje, umwuka mwiza, n'abashoferi bagenda baba ba nyir'ibinyabiziga."],
+"Active drivers on the network":["Chauffeurs actifs sur le réseau","Abashoferi bakora kuri Spark"],
+"Average pickup time":["Temps moyen de prise en charge","Igihe cyo kugufata"],
+"Districts covered, 24/7":["Districts couverts, 24 h/24","Uturere dukorerwamo, 24/7"],
+"Tailpipe CO₂ per trip":["CO₂ d'échappement par trajet","CO₂ isohoka kuri buri rugendo"],
+"Technology":["Technologie","Ikoranabuhanga"],
+"Smarter mobility, powered by one network":["Une mobilité plus intelligente, portée par un seul réseau","Ingendo zigezweho, ku rusobe rumwe"],
+"Our platform connects riders, drivers and vehicles in real time — transparent pricing, live tracking and instant payouts in a single system.":["Notre plateforme relie passagers, chauffeurs et véhicules en temps réel — prix transparents, suivi en direct et paiements instantanés dans un seul système.","Urubuga rwacu ruhuza abagenzi, abashoferi n'ibinyabiziga ako kanya — ibiciro bigaragara, gukurikirana urugendo, no kwishyurwa ako kanya."],
+"Upfront fares":["Tarifs annoncés d'avance","Igiciro kigaragara mbere"],
+"See the exact price before you confirm. No haggling, ever.":["Voyez le prix exact avant de confirmer. Sans jamais négocier.","Ubona igiciro nyacyo mbere yo kwemeza. Nta gucuruzanya na rimwe."],
+"Live GPS tracking":["Suivi GPS en direct","Gukurikirana GPS"],
+"Every trip tracked end to end. Share your ride in one tap.":["Chaque trajet est suivi de bout en bout. Partagez votre course en un geste.","Buri rugendo rukurikiranwa kuva ku ntangiriro kugeza ku iherezo. Sangiza urugendo rwawe ukanze rimwe."],
+"Instant payouts":["Paiements instantanés","Kwishyurwa ako kanya"],
+"Drivers are paid per ride, with weekly settlement.":["Les chauffeurs sont payés à la course, avec règlement hebdomadaire.","Abashoferi bahembwa kuri buri rugendo, bakarangiriza mu cyumweru."],
+"SOS built in":["SOS intégré","SOS iri muri App"],
+"One tap connects any trip to emergency line 112.":["Un geste relie tout trajet à la ligne d'urgence 112.","Gukanda rimwe bihuza urugendo n'umurongo w'ubutabazi 112."],
+"On a trip · Nyarugenge":["En course · Nyarugenge","Mu rugendo · Nyarugenge"],
+"Your trip":["Votre trajet","Urugendo rwawe"],
+"Pickup · now":["Départ · maintenant","Aho uva · nonaha"],
+"Drop-off · 14 min":["Arrivée · 14 min","Aho ugana · iminota 14"],
+"Fare — locked upfront":["Tarif — fixé d'avance","Igiciro — cyemejwe mbere"],
+"3 min away":["À 3 min","Iminota 3"],
+"Confirm ride":["Confirmer la course","Emeza urugendo"],
+"Riding with Spark":["Voyager avec Spark","Kugenda na Spark"],
+"From request to arrival in minutes":["De la demande à l'arrivée en quelques minutes","Kuva usabye kugeza ugeze mu minota mike"],
+"Request":["Demandez","Saba"],
+"Set your pickup and destination in the app. The exact fare is shown before you confirm — what you see is what you pay.":["Indiquez départ et destination dans l'app. Le tarif exact s'affiche avant confirmation — ce que vous voyez est ce que vous payez.","Shyiramo aho uri n'aho ujya muri App. Igiciro nyacyo kigaragara mbere yo kwemeza — icyo ubona ni cyo wishyura."],
+"Ride electric":["Roulez électrique","Genda mu mashanyarazi"],
+"A vetted driver arrives in an all-electric vehicle. Your trip is GPS-tracked and insured from the first metre to the last.":["Un chauffeur vérifié arrive en véhicule 100 % électrique. Votre trajet est suivi par GPS et assuré du premier au dernier mètre.","Umushoferi wagenzuwe aza mu kinyabiziga cy'amashanyarazi. Urugendo rwawe rukurikiranwa na GPS kandi rufite ubwishingizi kuva ku ntangiriro."],
+"Pay your way":["Payez comme vous voulez","Ishyura uko ubishaka"],
+"Pay by mobile money or cash, rate your trip, and go. Drivers receive their earnings instantly.":["Payez par mobile money ou en espèces, notez votre trajet, et c'est parti. Les chauffeurs reçoivent leurs gains instantanément.","Ishyura ukoresheje mobile money cyangwa amafaranga mu ntoki, utange amanota, hanyuma ugende. Abashoferi bahabwa inyungu zabo ako kanya."],
+"The fleet":["La flotte","Ibinyabiziga byacu"],
+"One network. Three ways to move.":["Un réseau. Trois façons de bouger.","Urusobe rumwe. Uburyo butatu bwo kugenda."],
+"Every Spark vehicle is 100% electric, maintained by our own technicians, and available on a clear path to ownership.":["Chaque véhicule Spark est 100 % électrique, entretenu par nos techniciens, et accessible via un chemin clair vers la propriété.","Buri kinyabiziga cya Spark gikoresha amashanyarazi 100%, gisanwa n'abatekinisiye bacu, kandi gifite inzira igaragara yo kukigira icyawe."],
+"Electric motorcycle":["Moto électrique","Moto y'amashanyarazi"],
+"The workhorse of Kigali — quick through traffic, silent on the street, and built for thousands of city trips.":["Le cheval de trait de Kigali — rapide dans le trafic, silencieux dans la rue, conçu pour des milliers de trajets urbains.","Igikoresho cy'ingenzi cya Kigali — yihuta mu modoka nyinshi, ituje mu muhanda, yubakiwe ingendo ibihumbi mu mujyi."],
+"Daily rate":["Tarif journalier","Igiciro ku munsi"],
+"Time to ownership":["Délai de propriété","Igihe cyo kuba nyirayo"],
+"Included":["Inclus","Ibikubiyemo"],
+"Best for":["Idéal pour","Byiza kuri"],
+"Insurance · maintenance · gear":["Assurance · entretien · équipement","Ubwishingizi · gusana · ibikoresho"],
+"City trips & deliveries":["Trajets urbains & livraisons","Ingendo zo mu mujyi no gutwara ibicuruzwa"],
+"Explore the fleet":["Découvrir la flotte","Reba ibinyabiziga"],
+"Every shift brings the vehicle closer to yours":["Chaque journée rapproche le véhicule de vous","Buri munsi ukora, ikinyabiziga kikwegera"],
+"Fixed daily payments that already include insurance, maintenance and training — until the vehicle is fully yours.":["Des paiements journaliers fixes incluant déjà assurance, entretien et formation — jusqu'à ce que le véhicule soit entièrement à vous.","Ubwishyu buhoraho ku munsi burimo ubwishingizi, gusana n'amahugurwa — kugeza ikinyabiziga kibaye icyawe rwose."],
+"For owners":["Pour propriétaires","Ku bafite ibyabo"],
+"Lease to own":["Location-acquisition","Kodesha ube nyirayo"],
+"Most popular":["Le plus choisi","Ikunzwe cyane"],
+"Bring your own electric vehicle":["Amenez votre propre véhicule électrique","Zana ikinyabiziga cyawe cy'amashanyarazi"],
+"Keep 100% of every fare":["Gardez 100 % de chaque course","Gumana 100% bya buri rugendo"],
+"Platform, leads & trip insurance included":["Plateforme, clients & assurance trajet inclus","Urubuga, abakiriya n'ubwishingizi birimo"],
+"Go online whenever you choose":["Connectez-vous quand vous voulez","Injira igihe icyo ari cyo cyose"],
+"Apply as a partner":["Devenir partenaire","Saba nk'umufatanyabikorwa"],
+"Brand-new electric moto + brand-new smartphone":["Moto électrique neuve + smartphone neuf","Moto nshya y'amashanyarazi + telefoni nshya"],
+"RWF 50,000 refundable deposit":["Caution remboursable de 50 000 RWF","Ingwate ya 50.000 RWF isubizwa"],
+"Free registration, uniforms & helmet · full insurance":["Immatriculation, uniformes & casque offerts · assurance complète","Kwandikisha, imyenda n'ingofero ku buntu · ubwishingizi busesuye"],
+"The moto is yours in about 2 years":["La moto est à vous en 2 ans environ","Moto iba iyawe mu myaka igera kuri 2"],
+"Apply to drive":["Postuler pour conduire","Saba gutwara"],
+"Sedans from 30,000 · crossovers from 40,000":["Berlines dès 30 000 · crossovers dès 40 000","Sedan kuva 30.000 · crossover kuva 40.000"],
+"Comprehensive cover & servicing":["Assurance complète & entretien","Ubwishingizi busesuye no gusana"],
+"Professional driver training":["Formation professionnelle de conduite","Amahugurwa y'umwuga w'ubushoferi"],
+"The car is yours in 5 years":["La voiture est à vous en 5 ans","Imodoka iba iyawe mu myaka 5"],
+"Top drivers earn up to RWF 25,000 per day at peak demand.":["Les meilleurs chauffeurs gagnent jusqu'à 25 000 RWF par jour en période de pointe.","Abashoferi beza binjiza kugeza ku 25.000 RWF ku munsi mu bihe by'akazi kenshi."],
+"Try the earnings calculator":["Essayez le calculateur de revenus","Gerageza kubara inyungu"],
+"Cleaner air. Quieter streets. Better livelihoods.":["Un air plus pur. Des rues plus calmes. De meilleures vies.","Umwuka mwiza. Imihanda ituje. Ubuzima bwiza."],
+"Aligned with Rwanda's move to electric public transport.":["Aligné avec la transition du Rwanda vers le transport public électrique.","Bijyanye n'icyerekezo cy'u Rwanda cyo gukoresha amashanyarazi mu bwikorezi."],
+"Since January 2025, only electric motos may be licensed for passenger service in Kigali. Spark was built for exactly this moment.":["Depuis janvier 2025, seules les motos électriques peuvent être licenciées pour le transport de passagers à Kigali. Spark a été créé exactement pour ce moment.","Kuva muri Mutarama 2025, amamoto y'amashanyarazi ni yo yonyine yemererwa gutwara abagenzi i Kigali. Spark yaremewe iki gihe."],
+"Emissions per trip":["Émissions par trajet","Imyuka kuri buri rugendo"],
+"Zero tailpipe emissions on every ride — across the entire fleet, every day.":["Zéro émission d'échappement sur chaque course — sur toute la flotte, chaque jour.","Nta myuka ihumanya kuri buri rugendo — ku binyabiziga byose, buri munsi."],
+"Charging built into the network":["Recharge intégrée au réseau","Gusharija biri mu rusobe"],
+"Read our impact story":["Lire notre histoire d'impact","Soma inkuru y'ibyo duhindura"],
+"Voices":["Témoignages","Ubuhamya"],
+"What riders and drivers say":["Ce que disent passagers et chauffeurs","Ibyo abagenzi n'abashoferi bavuga"],
+"\u201cMy moto is quieter and my daily costs dropped. In two years it's mine — that changes everything for my family.\u201d":["« Ma moto est plus silencieuse et mes coûts quotidiens ont baissé. Dans deux ans elle est à moi — ça change tout pour ma famille. »","« Moto yanjye irituje kandi ibyo nkoresha ku munsi byaragabanutse. Mu myaka ibiri izaba iyanjye — bihindura byose ku muryango wanjye. »"],
+"\u201cI see the exact price before I tap. No arguing at the roadside, no surprises — the driver just arrives.\u201d":["« Je vois le prix exact avant de valider. Pas de négociation au bord de la route, pas de surprise — le chauffeur arrive, c'est tout. »","« Mbona igiciro nyacyo mbere yo gukanda. Nta mpaka ku muhanda, nta gutungurwa — umushoferi araza gusa. »"],
+"\u201cInsurance, maintenance, training — all inside one daily payment. I just drive, earn, and watch the car become mine.\u201d":["« Assurance, entretien, formation — tout dans un seul paiement journalier. Je conduis, je gagne, et je regarde la voiture devenir la mienne. »","« Ubwishingizi, gusana, amahugurwa — byose mu bwishyu bumwe bwa buri munsi. Ndatwara, ninjiza, ndeba imodoka iba iyanjye. »"],
+"Spark Moto driver · Kicukiro":["Chauffeur Spark Moto · Kicukiro","Umushoferi wa Spark Moto · Kicukiro"],
+"Rider · Nyarugenge":["Passagère · Nyarugenge","Umugenzi · Nyarugenge"],
+"Spark EV driver · Gasabo":["Chauffeuse Spark EV · Gasabo","Umushoferi wa Spark EV · Gasabo"],
+"Explore Spark":["Découvrir Spark","Menya Spark"],
+"Everything the network offers":["Tout ce que le réseau propose","Ibyo urusobe rutanga byose"],
+"Upfront fares, two vehicle classes":["Tarifs d'avance, deux classes de véhicules","Ibiciro bizwi mbere, ubwoko bubiri bw'ibinyabiziga"],
+"Own your vehicle in 2–5 years":["Possédez votre véhicule en 2 à 5 ans","Ba nyir'ikinyabiziga mu myaka 2–5"],
+"Motos, sedans and crossovers":["Motos, berlines et crossovers","Amamoto, sedan na crossover"],
+"Vetted, insured, tracked":["Vérifié, assuré, suivi","Byagenzuwe, byishingiwe, bikurikiranwa"],
+"Get moving":["En route","Tangira urugendo"],
+"Kigali is switching to electric.":["Kigali passe à l'électrique.","Kigali irimo guhindukirira amashanyarazi."],
+"Download the app to ride clean today — or apply to drive and start the road to owning your own vehicle.":["Téléchargez l'app pour voyager propre dès aujourd'hui — ou postulez pour conduire et prenez la route de la propriété.","Kuramo App ugende neza uyu munsi — cyangwa usabe gutwara utangire inzira yo kuba nyir'ikinyabiziga cyawe."],
+"Or become a Spark driver →":["Ou devenez chauffeur Spark →","Cyangwa ube umushoferi wa Spark →"],
+
+/* ---------- ride ---------- */
+"For riders":["Pour les passagers","Ku bagenzi"],
+"Every ride, electric. Every fare, upfront.":["Chaque course, électrique. Chaque tarif, annoncé d'avance.","Buri rugendo, amashanyarazi. Buri giciro, kizwi mbere."],
+"Two ways to move through Kigali — the quick Spark Moto or the comfortable Spark EV — with the exact price locked before you book.":["Deux façons de traverser Kigali — la rapide Spark Moto ou la confortable Spark EV — avec le prix exact fixé avant la réservation.","Uburyo bubiri bwo kunyura Kigali — Spark Moto yihuta cyangwa Spark EV iryoshye — igiciro nyacyo cyemejwe mbere yo gufata urugendo."],
+"Compare rides":["Comparer les courses","Gereranya ingendo"],
+"Average pickup":["Prise en charge moyenne","Kugufata"],
+"Across Kigali":["Dans tout Kigali","Muri Kigali hose"],
+"CO₂ per trip":["CO₂ par trajet","CO₂ ku rugendo"],
+"Trip in progress":["Course en cours","Urugendo rurakomeza"],
+"Two classes":["Deux classes","Ubwoko bubiri"],
+"Pick the ride that fits the trip":["Choisissez la course adaptée au trajet","Hitamo urugendo rukwiranye n'aho ujya"],
+"Both are fully electric, fully insured and driven by vetted professionals — the difference is space and speed.":["Les deux sont 100 % électriques, entièrement assurées et conduites par des professionnels vérifiés — la différence : l'espace et la vitesse.","Byombi bikoresha amashanyarazi, bifite ubwishingizi kandi bitwarwa n'ababihuguriwe — itandukaniro ni umwanya n'umuvuduko."],
+"Short, traffic-heavy city trips":["Trajets urbains courts et chargés","Ingendo ngufi mu mujyi urimo abantu benshi"],
+"Longer trips, groups & the airport":["Trajets plus longs, groupes & aéroport","Ingendo ndende, amatsinda n'ikibuga cy'indege"],
+"Vehicle":["Véhicule","Ikinyabiziga"],
+"Electric motorbike taxi":["Moto-taxi électrique","Moto-taxi y'amashanyarazi"],
+"Electric / hybrid car":["Voiture électrique / hybride","Imodoka y'amashanyarazi / hybrid"],
+"Passengers":["Passagers","Abagenzi"],
+"Up to 4":["Jusqu'à 4","Kugeza kuri 4"],
+"Feel":["Ressenti","Uko byumvikana"],
+"Fast & affordable":["Rapide & abordable","Byihuta kandi bihendutse"],
+"Quiet & comfortable":["Silencieux & confortable","Bituje kandi biryoshye"],
+"Booking":["Réservation","Gufata urugendo"],
+"On-demand":["À la demande","Igihe ubishakiye"],
+"On-demand or scheduled":["À la demande ou planifié","Igihe ubishakiye cyangwa uteganya"],
+"Fare":["Tarif","Igiciro"],
+"Distance + time, shown upfront":["Distance + durée, affiché d'avance","Intera + igihe, bigaragara mbere"],
+"Fares & payments":["Tarifs & paiements","Ibiciro no kwishyura"],
+"Fares are calculated from distance and time — including any busy-period factor — and shown in full before you confirm. The price on your screen is the price you pay.":["Les tarifs sont calculés selon la distance et la durée — y compris les périodes de forte demande — et affichés en entier avant confirmation. Le prix à l'écran est le prix payé.","Ibiciro bibarwa hakurikijwe intera n'igihe — harimo n'ibihe by'akazi kenshi — bikagaragara byose mbere yo kwemeza. Igiciro kiri kuri ecran ni cyo wishyura."],
+"Mobile money or cash":["Mobile money ou espèces","Mobile money cyangwa amafaranga"],
+"Pay however suits you, receipt in the app":["Payez comme il vous convient, reçu dans l'app","Ishyura uko bikworoheye, inyemezabwishyu muri App"],
+"Flexible":["Flexible","Byoroshye"],
+"Live driver ETA":["Arrivée du chauffeur en direct","Igihe umushoferi azagerera"],
+"Watch your driver approach on the map":["Suivez l'arrivée de votre chauffeur sur la carte","Reba umushoferi aza kuri karita"],
+"Share your trip":["Partagez votre trajet","Sangiza urugendo"],
+"Send live trip status to family in one tap":["Envoyez le statut du trajet à vos proches en un geste","Ohereza aho urugendo rugeze ku muryango ukanze rimwe"],
+"Rate every ride":["Notez chaque course","Tanga amanota kuri buri rugendo"],
+"Your feedback keeps the network professional":["Vos avis maintiennent le réseau professionnel","Ibitekerezo byawe bigumisha urusobe ku rwego rw'umwuga"],
+"Quality":["Qualité","Ubuziranenge"],
+"In the app":["Dans l'app","Muri App"],
+"Powered by the network":["Porté par le réseau","Bishyigikiwe n'urusobe"],
+"Two things make an electric network feel effortless: knowing where everything is, and never worrying about charge.":["Deux choses rendent un réseau électrique fluide : savoir où tout se trouve, et ne jamais se soucier de la charge.","Ibintu bibiri bituma urusobe rw'amashanyarazi rworoha: kumenya aho byose biri, no kudahangayikira umuriro."],
+"Follow every metre":["Suivez chaque mètre","Kurikirana buri metero"],
+"Live GPS from pickup to drop-off — shareable in one tap.":["GPS en direct du départ à l'arrivée — partageable en un geste.","GPS kuva aho uva kugera aho ugana — bisangizwa ukanze rimwe."],
+"Charged & ready":["Chargé & prêt","Byasharijwe kandi byiteguye"],
+"Charging is the network's job, not yours — vehicles arrive ready.":["La recharge est l'affaire du réseau, pas la vôtre — les véhicules arrivent prêts.","Gusharija ni akazi k'urusobe, si akawe — ibinyabiziga biza byiteguye."],
+"Three steps, and you're moving":["Trois étapes, et vous roulez","Intambwe eshatu, uba ugiye"],
+"Enter pickup and destination. See your driver, vehicle and the exact fare before you confirm.":["Entrez départ et destination. Voyez chauffeur, véhicule et tarif exact avant de confirmer.","Andika aho uri n'aho ujya. Ubona umushoferi, ikinyabiziga n'igiciro nyacyo mbere yo kwemeza."],
+"Track":["Suivez","Kurikirana"],
+"Follow your driver's arrival live, then follow your own trip on the map — and share it if you like.":["Suivez l'arrivée du chauffeur en direct, puis votre trajet sur la carte — et partagez-le si vous voulez.","Kurikirana umushoferi aza, hanyuma ukurikirane urugendo rwawe kuri karita — urusangize niba ubishaka."],
+"Arrive & pay":["Arrivez & payez","Gera wishyure"],
+"Mobile money or cash, then rate the trip. The whole ride, tailpipe-free.":["Mobile money ou espèces, puis notez la course. Tout le trajet, sans échappement.","Mobile money cyangwa amafaranga, hanyuma utange amanota. Urugendo rwose, nta myuka ihumanya."],
+"Protected by default":["Protégé par défaut","Umutekano ku bose"],
+"Safety is part of the fare":["La sécurité fait partie du tarif","Umutekano uri mu giciro"],
+"Every Spark trip carries the full safety stack — no premium tier required.":["Chaque trajet Spark inclut toute la protection — sans option payante.","Buri rugendo rwa Spark rufite umutekano wuzuye — nta kiguzi cy'inyongera gisabwa."],
+"Vetted drivers":["Chauffeurs vérifiés","Abashoferi bagenzuwe"],
+"Police-checked, licence-verified and Spark-trained before their first trip.":["Contrôle de police, permis vérifié et formation Spark avant leur première course.","Bagenzuwe na polisi, uruhushya rwabo rusuzumwe, bahuguwe na Spark mbere y'urugendo rwa mbere."],
+"Insured end to end":["Assuré de bout en bout","Ubwishingizi ku rugendo rwose"],
+"Comprehensive cover for passenger and driver on every ride.":["Couverture complète pour passager et chauffeur sur chaque course.","Ubwishingizi busesuye ku mugenzi n'umushoferi kuri buri rugendo."],
+"One-tap SOS":["SOS en un geste","SOS ukanze rimwe"],
+"Connects directly to emergency line 112 during any trip.":["Relie directement à la ligne d'urgence 112 pendant tout trajet.","Ihuza ako kanya n'umurongo w'ubutabazi 112 mu rugendo urwo ari rwo rwose."],
+"24/7 support":["Assistance 24 h/24","Ubufasha 24/7"],
+"Real people on the line, day and night, in English and Kinyarwanda.":["De vraies personnes au bout du fil, jour et nuit, en anglais et en kinyarwanda.","Abantu nyabo ku murongo, ku manywa na nijoro, mu Cyongereza no mu Kinyarwanda."],
+"See the full safety system":["Voir tout le système de sécurité","Reba uburyo bwose bw'umutekano"],
+"Your next ride is electric.":["Votre prochaine course est électrique.","Urugendo rwawe rukurikira ni urw'amashanyarazi."],
+"Download Spark and book your first zero-emission trip in under a minute.":["Téléchargez Spark et réservez votre premier trajet zéro émission en moins d'une minute.","Kuramo Spark ufate urugendo rwawe rwa mbere rudahumanya mu munota umwe."],
+
+/* ---------- drivers ---------- */
+"For drivers":["Pour les chauffeurs","Ku bashoferi"],
+"Earn from day one. Own it in the end.":["Gagnez dès le premier jour. Possédez à la fin.","Injiza kuva umunsi wa mbere. Uzarangize ubaye nyirayo."],
+"Bring your own electric vehicle, or lease a brand-new one from Spark and pay as you earn — insurance, maintenance and training already inside the daily payment.":["Amenez votre véhicule électrique, ou louez-en un neuf chez Spark et payez au fil de vos gains — assurance, entretien et formation déjà inclus dans le paiement journalier.","Zana ikinyabiziga cyawe cy'amashanyarazi, cyangwa ukodeshe gishya kwa Spark wishyure uko winjiza — ubwishingizi, gusana n'amahugurwa biri mu bwishyu bwa buri munsi."],
+"Estimate your earnings":["Estimez vos revenus","Gereranya inyungu zawe"],
+"Up to RWF 25k / day at peak":["Jusqu'à 25 000 RWF/jour en pointe","Kugeza 25.000 RWF ku munsi"],
+"Drivers already on Spark":["Chauffeurs déjà sur Spark","Abashoferi basanzwe kuri Spark"],
+"To full ownership":["Jusqu'à la pleine propriété","Kugera ku kuba nyirayo"],
+"No fixed shifts — you choose":["Pas d'horaires imposés — vous choisissez","Nta masaha ategetswe — wihitiramo"],
+"Two ways in":["Deux façons d'entrer","Inzira ebyiri"],
+"Pick the program that fits you":["Choisissez le programme qui vous convient","Hitamo gahunda ikunogeye"],
+"Already own an EV? Keep every fare. Starting from zero? Lease-to-own puts a new vehicle under you this week.":["Vous avez déjà un véhicule électrique ? Gardez chaque course. Vous partez de zéro ? La location-acquisition vous met un véhicule neuf sous les pieds cette semaine.","Usanzwe ufite ikinyabiziga cy'amashanyarazi? Gumana buri rugendo. Utangiriye ku busa? Kodesha-ube-nyirayo iguha ikinyabiziga gishya muri iki cyumweru."],
+"Program 01":["Programme 01","Gahunda 01"],
+"Register your approved electric bike or car":["Enregistrez votre moto ou voiture électrique approuvée","Andikisha moto cyangwa imodoka yawe y'amashanyarazi yemewe"],
+"Keep 100% of every fare you earn":["Gardez 100 % de chaque course gagnée","Gumana 100% bya buri rugendo winjije"],
+"Booking platform, daily rider leads & support":["Plateforme de réservation, clients quotidiens & assistance","Urubuga rw'ingendo, abakiriya ba buri munsi n'ubufasha"],
+"Trip insurance included":["Assurance trajet incluse","Ubwishingizi bw'urugendo burimo"],
+"Online whenever you choose — 7 days if you want":["En ligne quand vous voulez — 7 jours si vous le souhaitez","Ukora igihe ushaka — iminsi 7 nubishaka"],
+"Program 02":["Programme 02","Gahunda 02"],
+"Spark Lease · Drive-to-Own":["Location Spark · Conduire pour posséder","Kodesha Spark · Twara ube nyirayo"],
+"Brand-new Spark e-moto (RWF 7,500/day) or EV — sedan 30,000, crossover 40,000":["E-moto Spark neuve (7 500 RWF/jour) ou EV — berline 30 000, crossover 40 000","Moto nshya ya Spark (7.500 RWF/umunsi) cyangwa imodoka — sedan 30.000, crossover 40.000"],
+"Moto deposit: RWF 50,000, fully refundable":["Caution moto : 50 000 RWF, entièrement remboursable","Ingwate ya moto: 50.000 RWF, isubizwa yose"],
+"Brand-new smartphone, free registration, uniforms & helmets included":["Smartphone neuf, immatriculation, uniformes & casques inclus","Telefoni nshya, kwandikisha, imyenda n'ingofero birimo"],
+"Professional training: EV operation, road safety, customer service":["Formation professionnelle : conduite EV, sécurité routière, service client","Amahugurwa y'umwuga: gutwara EV, umutekano wo mu muhanda, kwakira abakiriya"],
+"Ownership transfers to you — ~2 years (moto) · 5 years (car)":["La propriété vous est transférée — ~2 ans (moto) · 5 ans (voiture)","Uba nyirayo — imyaka ~2 (moto) · imyaka 5 (imodoka)"],
+"Paid instantly per ride, settled weekly. Spark retains vehicle ownership until the lease completes — then it's transferred to you, no balloon payment.":["Payé instantanément à la course, réglé chaque semaine. Spark reste propriétaire jusqu'à la fin du contrat — puis le véhicule vous est transféré, sans paiement final.","Wishyurwa ako kanya kuri buri rugendo, bikarangirizwa mu cyumweru. Spark igumana ikinyabiziga kugeza amasezerano arangiye — hanyuma kikakwegurirwa, nta bwishyu bwa nyuma."],
+"See what a week could look like":["Voyez à quoi une semaine pourrait ressembler","Reba uko icyumweru cyagenda"],
+"Move the sliders to model your day. Figures are illustrative, based on Spark's published rates.":["Déplacez les curseurs pour modéliser votre journée. Chiffres indicatifs, basés sur les tarifs publiés par Spark.","Nyereza utubuto ubare umunsi wawe. Imibare ni urugero, ishingiye ku biciro Spark yatangaje."],
+"Your program":["Votre programme","Gahunda yawe"],
+"Trips per day":["Courses par jour","Ingendo ku munsi"],
+"Average fare (RWF)":["Tarif moyen (RWF)","Igiciro gisanzwe (RWF)"],
+"Lease · Spark Moto — RWF 7,500/day":["Location · Spark Moto — 7 500 RWF/jour","Kodesha · Spark Moto — 7.500 RWF/umunsi"],
+"Lease · EV Sedan — RWF 30,000/day":["Location · Berline EV — 30 000 RWF/jour","Kodesha · Sedan EV — 30.000 RWF/umunsi"],
+"Lease · EV Crossover — RWF 40,000/day":["Location · Crossover EV — 40 000 RWF/jour","Kodesha · Crossover EV — 40.000 RWF/umunsi"],
+"Own-EV Partner — RWF 1,000/day":["Partenaire véhicule propre — 1 000 RWF/jour","Ufite icye — 1.000 RWF/umunsi"],
+"You're in peak territory — Spark's top drivers reach RWF 25,000 in a day.":["Vous êtes en zone de pointe — les meilleurs chauffeurs Spark atteignent 25 000 RWF par jour.","Uri mu rwego rwo hejuru — abashoferi beza ba Spark bagera ku 25.000 RWF ku munsi."],
+"Estimated take-home":["Revenu net estimé","Inyungu uteganya"],
+"Daily fares":["Courses du jour","Ingendo z'umunsi"],
+"Daily lease / fee":["Location / frais du jour","Ubukode / amafaranga y'umunsi"],
+"Per day":["Par jour","Ku munsi"],
+"Per week":["Par semaine","Ku cyumweru"],
+"Per month":["Par mois","Ku kwezi"],
+"Illustrative only. Actual earnings vary with demand, hours online and route mix. Lease plans run 6 days/week; Own-EV partners may drive 7. Energy costs are a fraction of petrol and are not included above.":["À titre indicatif. Les revenus réels varient selon la demande, les heures en ligne et les itinéraires. Les contrats de location courent 6 jours/semaine ; les partenaires 7. Le coût de l'énergie, bien inférieur à l'essence, n'est pas inclus ci-dessus.","Ni urugero gusa. Inyungu nyazo zihinduka bitewe n'abakiriya, amasaha ukora n'inzira. Ubukode ni iminsi 6 mu cyumweru; abafite ibyabo bashobora 7. Ikiguzi cy'amashanyarazi ni gito ugereranyije na lisansi kandi ntikibariwe hejuru."],
+"What's included":["Ce qui est inclus","Ibikubiyemo"],
+"Everything you need to work, in the payment":["Tout ce qu'il faut pour travailler, dans le paiement","Ibyo ukeneye byose byo gukora, biri mu bwishyu"],
+"Lease drivers start with a complete professional kit — nothing extra to buy.":["Les chauffeurs en location démarrent avec un kit professionnel complet — rien à acheter en plus.","Abashoferi bakodesha batangirana ibikoresho byuzuye by'umwuga — nta kindi bagura."],
+"The vehicle":["Le véhicule","Ikinyabiziga"],
+"A brand-new electric moto or EV, road-ready and registered.":["Une moto électrique ou un EV neufs, prêts à rouler et immatriculés.","Moto cyangwa imodoka nshya y'amashanyarazi, yiteguye kandi yanditswe."],
+"Full insurance":["Assurance complète","Ubwishingizi busesuye"],
+"Comprehensive cover for you and every passenger, on every trip.":["Couverture complète pour vous et chaque passager, sur chaque trajet.","Ubwishingizi busesuye kuri wowe na buri mugenzi, kuri buri rugendo."],
+"Maintenance":["Entretien","Gusana"],
+"Servicing and repairs handled by Spark's own technicians.":["Entretien et réparations assurés par les techniciens de Spark.","Gusana no gukora servisi bikorwa n'abatekinisiye ba Spark."],
+"Helmet & uniform":["Casque & uniforme","Ingofero n'umwenda"],
+"Professional gear so riders recognise and trust you instantly.":["Un équipement professionnel pour être reconnu et inspirer confiance immédiatement.","Ibikoresho by'umwuga bituma abagenzi bakumenya bakakwizera ako kanya."],
+"Smartphone":["Smartphone","Telefoni"],
+"A work device with the Spark driver app set up and ready.":["Un téléphone de travail avec l'app chauffeur Spark installée et prête.","Telefoni y'akazi ifite App y'umushoferi ya Spark yiteguye."],
+"Training":["Formation","Amahugurwa"],
+"EV operation, road safety, customer service and financial literacy.":["Conduite EV, sécurité routière, service client et éducation financière.","Gutwara EV, umutekano wo mu muhanda, kwakira abakiriya no gucunga imari."],
+"Requirements":["Conditions","Ibisabwa"],
+"Ready if you are":["Prêt si vous l'êtes","Twiteguye niba witeguye"],
+"Joining takes a few days, most of it training. You'll need:":["L'adhésion prend quelques jours, surtout de la formation. Il vous faudra :","Kwinjira bifata iminsi mike, myinshi ni amahugurwa. Uzakenera:"],
+"Valid driving licence":["Permis de conduire valide","Uruhushya rwo gutwara rwemewe"],
+"Category A for motos · Category B for cars":["Catégorie A pour motos · Catégorie B pour voitures","Icyiciro A ku mamoto · Icyiciro B ku modoka"],
+"Required":["Requis","Birasabwa"],
+"National ID":["Carte d'identité nationale","Indangamuntu"],
+"For registration and payouts":["Pour l'enregistrement et les paiements","Byo kwandikwa no kwishyurwa"],
+"Police clearance":["Attestation de police","Icyemezo cya polisi"],
+"Background check & clean record":["Vérification des antécédents & casier vierge","Isuzuma ry'amateka n'inyandiko isukuye"],
+"Refundable deposit":["Caution remboursable","Ingwate isubizwa"],
+"RWF 50,000 for moto lease plans":["50 000 RWF pour la location de moto","50.000 RWF ku bukode bwa moto"],
+"Lease only":["Location seulement","Ubukode gusa"],
+"Own vehicle (partners)":["Véhicule personnel (partenaires)","Ikinyabiziga cyawe (abafatanyabikorwa)"],
+"Registered, roadworthy, insured · max 10 years old":["Immatriculé, en bon état, assuré · 10 ans max","Cyanditswe, gikora neza, cyishingiwe · imyaka itarenze 10"],
+"Own-EV only":["Véhicule propre seulement","Abafite ibyabo gusa"],
+"Smartphone & attitude":["Smartphone & attitude","Telefoni n'imyitwarire"],
+"Android/iPhone with data · professional, punctual service":["Android/iPhone avec data · service professionnel et ponctuel","Android/iPhone ifite interineti · serivisi y'umwuga kandi ku gihe"],
+"Start your application":["Commencez votre candidature","Tangira gusaba"],
+"Tell us you're in":["Dites-nous que vous en êtes","Tubwire ko winjiye"],
+"Send your details and our driver team will call you back — usually within one working day.":["Envoyez vos coordonnées et notre équipe chauffeurs vous rappellera — en général sous un jour ouvré.","Ohereza amakuru yawe, itsinda ry'abashoferi rizaguhamagara — akenshi mu munsi umwe w'akazi."],
+"Prefer to talk? Call +250 796 698 668 — we answer 24/7":["Vous préférez parler ? Appelez le +250 796 698 668 — nous répondons 24 h/24","Uhisemo kuvugana? Hamagara +250 796 698 668 — dusubiza 24/7"],
+"Full name":["Nom complet","Amazina yombi"],
+"Phone":["Téléphone","Telefoni"],
+"Program":["Programme","Gahunda"],
+"Lease — Spark Moto":["Location — Spark Moto","Kodesha — Spark Moto"],
+"Lease — Spark EV":["Location — Spark EV","Kodesha — Spark EV"],
+"Own-EV Partner":["Partenaire véhicule propre","Ufite ikinyabiziga cye"],
+"Licence category":["Catégorie de permis","Icyiciro cy'uruhushya"],
+"A (moto)":["A (moto)","A (moto)"],
+"B (car)":["B (voiture)","B (imodoka)"],
+"A + B":["A + B","A + B"],
+"Anything we should know?":["Quelque chose à nous signaler ?","Hari ikindi twamenya?"],
+"Send application":["Envoyer la candidature","Ohereza ubusabe"],
+"Driver FAQ":["FAQ Chauffeurs","Ibibazo by'abashoferi"],
+"Common questions":["Questions fréquentes","Ibibazo bikunze kubazwa"],
+"Everything else, our team can answer on +250 796 698 668":["Pour le reste, notre équipe répond au +250 796 698 668","Ibindi byose, itsinda ryacu ribisubiza kuri +250 796 698 668"],
+"How and when do I get paid?":["Comment et quand suis-je payé ?","Nishyurwa nte kandi ryari?"],
+"Instantly per ride inside the driver app, with weekly settlement to your account. You always see today's earnings in real time.":["Instantanément à chaque course dans l'app chauffeur, avec règlement hebdomadaire sur votre compte. Vous voyez toujours vos gains du jour en temps réel.","Ako kanya kuri buri rugendo muri App y'umushoferi, bikarangirizwa kuri konti yawe buri cyumweru. Uhora ubona inyungu z'umunsi ako kanya."],
+"Do I choose my own hours?":["Est-ce que je choisis mes horaires ?","Ni jye wihitiramo amasaha?"],
+"Yes — there are no fixed shifts. Go online whenever you want. Lease payments run six days a week; the seventh day is yours either way.":["Oui — aucun horaire imposé. Connectez-vous quand vous voulez. La location court six jours par semaine ; le septième est à vous dans tous les cas.","Yego — nta masaha ategetswe. Injira igihe ushaka. Ubukode ni iminsi itandatu mu cyumweru; umunsi wa karindwi ni uwawe uko byagenda kose."],
+"What happens if the vehicle breaks down?":["Que se passe-t-il si le véhicule tombe en panne ?","Bigenda bite ikinyabiziga kigize ikibazo?"],
+"Maintenance is included on lease plans and handled by Spark's technicians, so repairs don't come out of your pocket.":["L'entretien est inclus dans la location et assuré par les techniciens de Spark : les réparations ne sortent pas de votre poche.","Gusana biri mu bukode kandi bikorwa n'abatekinisiye ba Spark, bityo ntibigukuraho amafaranga."],
+"When does the vehicle become mine?":["Quand le véhicule devient-il le mien ?","Ikinyabiziga kiba icyanjye ryari?"],
+"At the end of the lease term — roughly two years for a moto, five for a car — ownership is transferred to you. No hidden balloon payment.":["À la fin du contrat — environ deux ans pour une moto, cinq pour une voiture — la propriété vous est transférée. Sans paiement final caché.","Amasezerano arangiye — hafi imyaka ibiri kuri moto, itanu ku modoka — uba nyirayo. Nta bwishyu buhishe bwa nyuma."],
+"Your vehicle is waiting.":["Votre véhicule vous attend.","Ikinyabiziga cyawe kigutegereje."],
+"Apply today, train this week, and start earning on Kigali's electric network.":["Postulez aujourd'hui, formez-vous cette semaine, et commencez à gagner sur le réseau électrique de Kigali.","Saba uyu munsi, uhugurwe muri iki cyumweru, utangire kwinjiza ku rusobe rw'amashanyarazi rwa Kigali."],
+
+/* ---------- fleet ---------- */
+"Built for Kigali's hills, priced to be owned.":["Conçue pour les collines de Kigali, tarifée pour être possédée.","Byubakiwe imisozi ya Kigali, bifite igiciro cyo kubigira ibyawe."],
+"Three vehicle classes, one standard: fully electric, professionally maintained, and on a clear path from lease to your name.":["Trois classes de véhicules, un seul standard : 100 % électriques, entretenus par des professionnels, et sur un chemin clair de la location à votre nom.","Ubwoko butatu bw'ibinyabiziga, urugero rumwe: amashanyarazi 100%, bisanwa n'ababihuguriwe, kandi ku nzira igaragara iva ku bukode ikagera ku izina ryawe."],
+"Yours in ≈ 2 years":["À vous en ≈ 2 ans","Ikawe mu myaka ≈ 2"],
+"Yours in 5 years":["À vous en 5 ans","Ikawe mu myaka 5"],
+"Class 01 · Electric motorcycle":["Classe 01 · Moto électrique","Icyiciro 01 · Moto y'amashanyarazi"],
+"Class 02 · Electric sedan":["Classe 02 · Berline électrique","Icyiciro 02 · Sedan y'amashanyarazi"],
+"Class 03 · Electric crossover":["Classe 03 · Crossover électrique","Icyiciro 03 · Crossover y'amashanyarazi"],
+"Daily lease":["Location journalière","Ubukode bwa buri munsi"],
+"Short, traffic-heavy city trips":["Trajets urbains courts et denses","Ingendo ngufi mu mujyi"],
+"Emissions":["Émissions","Imyuka"],
+"0g tailpipe CO₂":["0 g de CO₂ d'échappement","0g ya CO₂ ihumanya"],
+"Full insurance & registration":["Assurance complète & immatriculation","Ubwishingizi busesuye no kwandikisha"],
+"Maintenance by Spark technicians":["Entretien par les techniciens Spark","Gusanwa n'abatekinisiye ba Spark"],
+"Helmet, uniform & work smartphone":["Casque, uniforme & smartphone de travail","Ingofero, umwenda na telefoni y'akazi"],
+"Rider & safety training":["Formation conduite & sécurité","Amahugurwa yo gutwara n'umutekano"],
+"Business trips & airport runs":["Déplacements pro & aéroport","Ingendo z'akazi n'ikibuga cy'indege"],
+"Comprehensive insurance":["Assurance complète","Ubwishingizi busesuye"],
+"Servicing & repairs included":["Entretien & réparations inclus","Servisi no gusana birimo"],
+"Scheduled & on-demand bookings":["Réservations planifiées & à la demande","Gufata urugendo uteganya cyangwa ako kanya"],
+"Up to 4 + luggage":["Jusqu'à 4 + bagages","Kugeza kuri 4 + imizigo"],
+"Families, groups & longer routes":["Familles, groupes & longs trajets","Imiryango, amatsinda n'ingendo ndende"],
+"Extra space for luggage":["Espace supplémentaire pour bagages","Umwanya w'inyongera w'imizigo"],
+"Lease this vehicle":["Louer ce véhicule","Kodesha iki kinyabiziga"],
+"Kept running by Spark":["Maintenue en marche par Spark","Bikomeza gukora bishyigikiwe na Spark"],
+"We manage the fleet, so drivers just drive":["Nous gérons la flotte, les chauffeurs conduisent","Ducunga ibinyabiziga, abashoferi bagatwara gusa"],
+"Spark owns, charges and maintains every leased vehicle. Batteries are monitored, servicing is scheduled, and energy costs a fraction of petrol — which is exactly why driver take-home improves.":["Spark possède, recharge et entretient chaque véhicule loué. Les batteries sont surveillées, l'entretien planifié, et l'énergie coûte une fraction de l'essence — c'est exactement pourquoi le revenu net des chauffeurs augmente.","Spark ni yo nyir'ibinyabiziga, ikabisharija ikanabisana. Batiri zikurikiranwa, servisi iteganywa, kandi amashanyarazi ahendutse cyane kurusha lisansi — ni yo mpamvu inyungu z'abashoferi ziyongera."],
+"Top up at partner points across the city":["Rechargez aux points partenaires dans toute la ville","Sharijira ku bibanza by'abafatanyabikorwa mu mujyi hose"],
+"Preventive maintenance":["Entretien préventif","Gusana mbere y'ikibazo"],
+"Handled by Spark's own technicians":["Assuré par les techniciens de Spark","Bikorwa n'abatekinisiye ba Spark"],
+"Fleet telemetry":["Télémétrie de flotte","Ikurikirana ry'ibinyabiziga"],
+"Battery health and vehicle status, monitored":["Santé des batteries et état des véhicules, surveillés","Ubuzima bwa batiri n'imiterere y'ikinyabiziga birakurikiranwa"],
+"Always on":["Toujours actif","Buri gihe"],
+"Fleet charging":["Recharge de la flotte","Gusharija ibinyabiziga"],
+"One standard":["Un seul standard","Urugero rumwe"],
+"Every class, the same promise":["Chaque classe, la même promesse","Buri cyiciro, isezerano rimwe"],
+"Whichever vehicle you drive or ride in — the fare is upfront, the trip is tracked and insured, the tailpipe doesn't exist, and the lease ends with the keys in your name.":["Quel que soit le véhicule que vous conduisez ou empruntez — le tarif est annoncé d'avance, le trajet est suivi et assuré, l'échappement n'existe pas, et la location se termine avec les clés à votre nom.","Icyo utwara cyangwa ugendamo cyose — igiciro kizwi mbere, urugendo rukurikiranwa kandi rwishingiwe, nta myuka ihumanya, kandi ubukode burangirana n'imfunguzo ku izina ryawe."],
+"Telemetry on every vehicle":["Télémétrie sur chaque véhicule","Ikurikirana kuri buri kinyabiziga"],
+"Pick your vehicle. Make it yours.":["Choisissez votre véhicule. Faites-en le vôtre.","Hitamo ikinyabiziga. Ukigire icyawe."],
+"Apply once — our team matches you to the right class and gets you trained and on the road.":["Postulez une fois — notre équipe vous oriente vers la bonne classe, vous forme et vous met sur la route.","Saba rimwe — itsinda ryacu rikugenera icyiciro gikwiye, rikaguhugura rikakujyana mu muhanda."],
+
+/* ---------- safety ---------- */
+"Safety first":["La sécurité d'abord","Umutekano mbere ya byose"],
+"Built so every trip is accountable.":["Conçu pour que chaque trajet soit traçable.","Byubatswe kugira ngo buri rugendo rugire uwarubazwa."],
+"Safety isn't a feature we added to Spark — it's the standard the whole network is built on, for riders and drivers alike.":["La sécurité n'est pas une option ajoutée à Spark — c'est le standard sur lequel tout le réseau est bâti, pour passagers comme chauffeurs.","Umutekano si ikintu twongeyeho kuri Spark — ni urufatiro urusobe rwose rwubakiyeho, ku bagenzi no ku bashoferi."],
+"Trips insured & GPS-tracked":["Trajets assurés & suivis GPS","Ingendo zishingiwe kandi zikurikiranwa na GPS"],
+"One-tap in-trip SOS":["SOS en un geste pendant le trajet","SOS ukanze rimwe mu rugendo"],
+"Support response time":["Temps de réponse assistance","Igihe ubufasha busubiriza"],
+"Every driver verified":["Chaque chauffeur vérifié","Buri mushoferi yagenzuwe"],
+"Before the first trip":["Avant la première course","Mbere y'urugendo rwa mbere"],
+"How a driver gets vetted":["Comment un chauffeur est vérifié","Uko umushoferi agenzurwa"],
+"No one drives for Spark without clearing every step — owner-partners and lease drivers alike.":["Personne ne conduit pour Spark sans franchir chaque étape — partenaires propriétaires comme chauffeurs en location.","Nta muntu utwara kuri Spark atarangije intambwe zose — abafatanyabikorwa n'abakodesha kimwe."],
+"Application & ID":["Candidature & identité","Ubusabe n'indangamuntu"],
+"Identity confirmed against national ID.":["Identité confirmée avec la carte nationale.","Umwirondoro wemezwa ku ndangamuntu."],
+"Police check":["Contrôle de police","Igenzura rya polisi"],
+"Background clearance and a clean record, verified.":["Antécédents vérifiés et casier vierge confirmé.","Amateka asuzumwa, inyandiko isukuye yemezwa."],
+"Licence verified":["Permis vérifié","Uruhushya rusuzumwa"],
+"Category A or B licence checked and recorded.":["Permis catégorie A ou B contrôlé et enregistré.","Uruhushya rw'icyiciro A cyangwa B rugenzurwa rukandikwa."],
+"EV operation, road safety and customer service.":["Conduite EV, sécurité routière et service client.","Gutwara EV, umutekano wo mu muhanda no kwakira abakiriya."],
+"Gear & go":["Équipement & départ","Ibikoresho hanyuma ugende"],
+"Helmet, uniform and app onboarding — then online.":["Casque, uniforme et prise en main de l'app — puis en ligne.","Ingofero, umwenda no kwiga App — hanyuma ugatangira."],
+"During every trip":["Pendant chaque trajet","Mu rugendo rwose"],
+"Four layers of protection":["Quatre niveaux de protection","Inzego enye z'umutekano"],
+"Every trip is tracked end to end, with live sharing to family or friends in one tap.":["Chaque trajet est suivi de bout en bout, avec partage en direct aux proches en un geste.","Buri rugendo rukurikiranwa rwose, rusangizwa umuryango cyangwa inshuti ukanze rimwe."],
+"Cover for both passenger and driver on every single ride — no exceptions.":["Couverture du passager et du chauffeur sur chaque course — sans exception.","Ubwishingizi ku mugenzi n'umushoferi kuri buri rugendo — nta kurobanura."],
+"SOS to 112":["SOS vers le 112","SOS kuri 112"],
+"The in-app SOS button connects riders and drivers directly to emergency services.":["Le bouton SOS de l'app relie passagers et chauffeurs directement aux services d'urgence.","Buto ya SOS muri App ihuza abagenzi n'abashoferi ako kanya n'ubutabazi."],
+"Ratings & reports":["Notes & signalements","Amanota n'amaraporo"],
+"Rate every trip and report incidents in-app — every report is reviewed and acted on.":["Notez chaque trajet et signalez les incidents dans l'app — chaque signalement est examiné et traité.","Tanga amanota kuri buri rugendo unamenyeshe ibibazo muri App — buri raporo isuzumwa igakurikiranwa."],
+"Always reachable":["Toujours joignable","Duhari buri gihe"],
+"A human on the line, day and night":["Un humain au bout du fil, jour et nuit","Umuntu nyawe ku murongo, ku manywa na nijoro"],
+"Our Kigali support team answers 24/7 in English and Kinyarwanda — for riders, drivers, and anyone with a question about a trip.":["Notre équipe d'assistance à Kigali répond 24 h/24 en anglais et en kinyarwanda — passagers, chauffeurs, et toute question sur un trajet.","Itsinda ry'ubufasha rya Kigali risubiza 24/7 mu Cyongereza no mu Kinyarwanda — ku bagenzi, abashoferi, n'ufite ikibazo cyose ku rugendo."],
+"Questions, lost items, trip issues — response in under 2 minutes":["Questions, objets perdus, soucis de trajet — réponse en moins de 2 minutes","Ibibazo, ibintu byazimiye, ibibazo by'urugendo — igisubizo mu minota 2"],
+"One tap from inside any trip":["Un geste depuis n'importe quel trajet","Gukanda rimwe uri mu rugendo urwo ari rwo rwose"],
+"In-app incident report":["Signalement d'incident dans l'app","Kumenyekanisha ikibazo muri App"],
+"Reviewed by the safety team":["Examiné par l'équipe sécurité","Bisuzumwa n'itsinda ry'umutekano"],
+"Tracked":["Suivi","Birakurikiranwa"],
+"Contact us":["Contactez-nous","Twandikire"],
+"Safe to ride. Safe to drive.":["Sûr pour voyager. Sûr pour conduire.","Umutekano ku bagenda. Umutekano ku batwara."],
+"Join a network where every trip is vetted, insured and watched over — around the clock.":["Rejoignez un réseau où chaque trajet est vérifié, assuré et surveillé — en continu.","Injira mu rusobe aho buri rugendo rugenzurwa, rwishingirwa kandi rurindwa — igihe cyose."],
+
+/* ---------- impact ---------- */
+"Every trip is one less engine running on petrol.":["Chaque trajet, c'est un moteur essence de moins.","Buri rugendo ni moteri imwe ya lisansi ivuyeho."],
+"Spark exists to prove that clean transport can also be the best transport — faster to arrive, cheaper to run, and better for the people driving it.":["Spark existe pour prouver que le transport propre peut aussi être le meilleur — plus rapide, moins cher à exploiter, et meilleur pour ceux qui conduisent.","Spark ibaho kugira ngo yerekane ko ubwikorezi busukuye ari na bwo bwiza — bwihuta, buhendutse gukoresha, kandi bwiza ku babutwara."],
+"Kigali, without the exhaust.":["Kigali, sans les gaz d'échappement.","Kigali, nta myuka ihumanya."],
+"A city of a thousand hills deserves air to match.":["Une ville aux mille collines mérite un air à sa hauteur.","Umujyi w'imisozi igihumbi ukwiye umwuka ubereye."],
+"The numbers":["Les chiffres","Imibare"],
+"What 100% electric changes":["Ce que change le 100 % électrique","Icyo amashanyarazi 100% ahindura"],
+"No tailpipe, no exhaust — on every single ride.":["Pas d'échappement, pas de gaz — sur chaque course.","Nta myuka, nta gasohoka — kuri buri rugendo."],
+"On the street":["Dans la rue","Mu muhanda"],
+"Electric motors take the engine roar out of the city.":["Les moteurs électriques ôtent le vacarme des moteurs de la ville.","Moteri z'amashanyarazi zikura urusaku rw'imoteri mu mujyi."],
+"Livelihoods":["Moyens de subsistance","Imibereho"],
+"Drivers earning on electric — many on the road to ownership.":["Des chauffeurs qui gagnent grâce à l'électrique — beaucoup en route vers la propriété.","Abashoferi binjiza ku mashanyarazi — benshi bari mu nzira yo kuba ba nyirayo."],
+"The policy moment":["Le tournant réglementaire","Igihe cy'amabwiriza"],
+"Rwanda chose electric. Spark was built for it.":["Le Rwanda a choisi l'électrique. Spark a été créé pour cela.","U Rwanda rwahisemo amashanyarazi. Spark yaremewe ibyo."],
+"Electric taxis reach Kigali":["Les taxis électriques arrivent à Kigali","Tagisi z'amashanyarazi zigera i Kigali"],
+"The first electric taxi pilots put e-mobility on Rwanda's roads and on the national agenda.":["Les premiers taxis électriques pilotes mettent l'e-mobilité sur les routes du Rwanda et à l'agenda national.","Ibigeragezo bya mbere by'amatagisi y'amashanyarazi byazanye e-mobility mu mihanda y'u Rwanda no ku murongo w'igihugu."],
+"Formalisation":["Formalisation","Gushyira mu mategeko"],
+"Moto taxis go professional":["Les motos-taxis se professionnalisent","Amamoto-taxi ahinduka umwuga"],
+"Regulators require motorbike taxis to operate under formal companies or cooperatives — raising standards across the sector.":["Les régulateurs exigent que les motos-taxis opèrent via des sociétés ou coopératives formelles — relevant les standards du secteur.","Abagenzuzi basaba ko amamoto-taxi akorera mu bigo cyangwa amakoperative byemewe — bizamura urugero mu rwego rwose."],
+"Electric-only licensing":["Licences 100 % électriques","Impushya z'amashanyarazi gusa"],
+"From January 2025, only electric motorcycles may be licensed for passenger service in Kigali, and new petrol taxi registrations end.":["Depuis janvier 2025, seules les motos électriques peuvent être licenciées pour le transport de passagers à Kigali, et les nouvelles immatriculations de taxis essence cessent.","Kuva Mutarama 2025, amamoto y'amashanyarazi ni yo yonyine ahabwa impushya zo gutwara abagenzi i Kigali, kandi kwandikisha tagisi nshya za lisansi birahagarara."],
+"Today":["Aujourd'hui","Uyu munsi"],
+"Spark runs 100% electric":["Spark roule 100 % électrique","Spark ikoresha amashanyarazi 100%"],
+"A full network — motos, sedans and crossovers — operating across all three districts, fully compliant with RURA and RTDA requirements.":["Un réseau complet — motos, berlines et crossovers — opérant dans les trois districts, en pleine conformité avec la RURA et la RTDA.","Urusobe rwuzuye — amamoto, sedan na crossover — rukorera mu turere twose uko ari dutatu, rwubahiriza amabwiriza ya RURA na RTDA."],
+"Next":["Ensuite","Ibikurikira"],
+"Beyond Kigali":["Au-delà de Kigali","Hanze ya Kigali"],
+"Expansion to more Rwandan cities is planned as the network and charging footprint grow.":["L'expansion vers d'autres villes rwandaises est prévue à mesure que le réseau et les points de recharge grandissent.","Kwaguka mu yindi mijyi y'u Rwanda biteganyijwe uko urusobe n'ahantu ho gusharijira byiyongera."],
+"Zero-emission by mandate — and by design":["Zéro émission par obligation — et par conception","Nta myuka ihumanya ku itegeko — no ku bushake"],
+"People first":["L'humain d'abord","Abantu mbere"],
+"Clean transport that pays its drivers better":["Un transport propre qui paie mieux ses chauffeurs","Ubwikorezi busukuye buhemba neza abashoferi babwo"],
+"Electricity costs a fraction of petrol, maintenance is simpler, and Spark's lease ends in ownership — so the switch to electric isn't a sacrifice for drivers. It's a raise.":["L'électricité coûte une fraction de l'essence, l'entretien est plus simple, et la location Spark se termine en propriété — le passage à l'électrique n'est pas un sacrifice pour les chauffeurs. C'est une augmentation.","Amashanyarazi ahendutse cyane kurusha lisansi, gusana byoroshye, kandi ubukode bwa Spark burangirira ku kuba nyirayo — bityo guhindukirira amashanyarazi si igihombo ku bashoferi. Ni izamuka."],
+"Lower running costs":["Coûts d'exploitation réduits","Ikiguzi gito cyo gukoresha"],
+"Charging instead of fuel, every day":["La recharge au lieu du carburant, chaque jour","Gusharija aho kugura lisansi, buri munsi"],
+"More take-home":["Plus de revenu net","Inyungu nyinshi usigarana"],
+"An asset, not just a job":["Un actif, pas seulement un emploi","Umutungo, atari akazi gusa"],
+"Lease payments end in a vehicle you own":["Les paiements de location aboutissent à un véhicule à vous","Ubwishyu bw'ubukode burangirira ku kinyabiziga ubaye nyirayo"],
+"Training & financial literacy":["Formation & éducation financière","Amahugurwa no gucunga imari"],
+"Part of every driver's onboarding":["Inclus dans l'intégration de chaque chauffeur","Biri mu myigire ya buri mushoferi"],
+"Drive with Spark":["Conduire avec Spark","Twara na Spark"],
+"Ride the change.":["Roulez le changement.","Genda mu mpinduka."],
+"Every Spark trip you take keeps one more petrol engine off Kigali's streets.":["Chaque trajet Spark éloigne un moteur essence de plus des rues de Kigali.","Buri rugendo rwa Spark ufata rukura moteri imwe ya lisansi mu mihanda ya Kigali."],
+
+/* ---------- about ---------- */
+"About Spark":["À propos de Spark","Ibyerekeye Spark"],
+"We're building the electric backbone of African cities — starting with ours.":["Nous construisons l'ossature électrique des villes africaines — en commençant par la nôtre.","Turubaka urufatiro rw'amashanyarazi rw'imijyi ya Afurika — duhereye ku wacu."],
+"Spark Systems Rwanda Ltd runs Kigali's 100% electric ride network: the platform that moves riders, the lease program that puts vehicles in drivers' hands, and the operation that keeps the whole fleet running.":["Spark Systems Rwanda Ltd exploite le réseau de transport 100 % électrique de Kigali : la plateforme qui déplace les passagers, le programme de location qui met des véhicules entre les mains des chauffeurs, et l'opération qui fait tourner toute la flotte.","Spark Systems Rwanda Ltd icunga urusobe rw'ingendo z'amashanyarazi 100% rwa Kigali: urubuga rutwara abagenzi, gahunda y'ubukode iha abashoferi ibinyabiziga, n'imirimo ituma ibinyabiziga byose bikomeza gukora."],
+"What we operate":["Ce que nous exploitons","Ibyo dukora"],
+"Three businesses, one network":["Trois métiers, un réseau","Ibikorwa bitatu, urusobe rumwe"],
+"Spark isn't just an app — we own, lease and maintain the vehicles behind it.":["Spark n'est pas qu'une app — nous possédons, louons et entretenons les véhicules derrière elle.","Spark si App gusa — turi ba nyir'ibinyabiziga, turabikodesha kandi tukabisana."],
+"Ride-hailing platform":["Plateforme de VTC","Urubuga rw'ingendo"],
+"A digital platform connecting passengers with verified drivers — upfront fares, GPS tracking, digital payments.":["Une plateforme numérique reliant passagers et chauffeurs vérifiés — tarifs d'avance, suivi GPS, paiements numériques.","Urubuga rwa digitale ruhuza abagenzi n'abashoferi bagenzuwe — ibiciro bizwi mbere, GPS, kwishyura kuri interineti."],
+"Operating lease program":["Programme de location opérationnelle","Gahunda y'ubukode"],
+"We own a fleet of electric mototaxis and EVs and lease them to qualified drivers on drive-to-own terms.":["Nous possédons une flotte de motos-taxis et d'EV électriques que nous louons à des chauffeurs qualifiés en location-acquisition.","Dufite amamoto-taxi n'imodoka z'amashanyarazi tubikodesha abashoferi babishoboye ku masezerano yo kuzabigira ibyabo."],
+"Fleet management":["Gestion de flotte","Gucunga ibinyabiziga"],
+"Charging, maintenance and telemetry for every leased vehicle — handled by our own technicians.":["Recharge, entretien et télémétrie pour chaque véhicule loué — assurés par nos propres techniciens.","Gusharija, gusana no gukurikirana buri kinyabiziga cyakodeshejwe — bikorwa n'abatekinisiye bacu."],
+"How we work":["Comment nous travaillons","Uko dukora"],
+"Professional. Innovative. Inclusive. Safe.":["Professionnel. Innovant. Inclusif. Sûr.","Umwuga. Udushya. Twese. Umutekano."],
+"Those four words shape every decision — from the vetting every driver clears, to serving riders in both English and Kinyarwanda, to pricing that's shown in full before anyone books.":["Ces quatre mots guident chaque décision — du contrôle que passe chaque chauffeur, au service en anglais et en kinyarwanda, aux prix affichés en entier avant toute réservation.","Aya magambo ane ayobora buri cyemezo — kuva ku igenzura buri mushoferi anyuramo, gukorera abagenzi mu Cyongereza no mu Kinyarwanda, kugeza ku biciro bigaragara byose mbere yo gufata urugendo."],
+"Professional":["Professionnel","Umwuga"],
+"Trained drivers, maintained vehicles, real support":["Chauffeurs formés, véhicules entretenus, vraie assistance","Abashoferi bahuguwe, ibinyabiziga bisanwa, ubufasha nyabwo"],
+"Innovative":["Innovant","Udushya"],
+"An electric-first network, built on our own platform":["Un réseau électrique d'abord, bâti sur notre propre plateforme","Urusobe rushingiye ku mashanyarazi, rwubatswe ku rubuga rwacu"],
+"Inclusive":["Inclusif","Twese"],
+"English & Kinyarwanda · ownership paths for drivers":["Anglais & kinyarwanda · chemins de propriété pour chauffeurs","Icyongereza n'Ikinyarwanda · inzira zo kuba nyirayo ku bashoferi"],
+"Safety-first":["Sécurité d'abord","Umutekano mbere"],
+"Vetted, insured, tracked — on every trip":["Vérifié, assuré, suivi — sur chaque trajet","Byagenzuwe, byishingiwe, bikurikiranwa — kuri buri rugendo"],
+"Where we are":["Où nous sommes","Aho turi"],
+"Kigali today. Rwanda next.":["Kigali aujourd'hui. Le Rwanda ensuite.","Kigali uyu munsi. U Rwanda ejo."],
+"Districts — Gasabo, Kicukiro, Nyarugenge":["Districts — Gasabo, Kicukiro, Nyarugenge","Uturere — Gasabo, Kicukiro, Nyarugenge"],
+"Service, every day of the year":["Service, chaque jour de l'année","Serivisi, buri munsi w'umwaka"],
+"Active drivers on the platform":["Chauffeurs actifs sur la plateforme","Abashoferi bakora ku rubuga"],
+"Compliant with RURA & RTDA requirements · Expansion to more Rwandan cities planned.":["Conforme aux exigences RURA & RTDA · Expansion prévue vers d'autres villes rwandaises.","Twubahiriza amabwiriza ya RURA na RTDA · Kwaguka mu yindi mijyi y'u Rwanda birateganyijwe."],
+"Come build this with us.":["Venez le construire avec nous.","Ngwino tubyubakane."],
+"Ride the network, drive on it, or reach out — we'd love to hear from you.":["Voyagez sur le réseau, conduisez-y, ou contactez-nous — nous serions ravis de vous lire.","Gendera ku rusobe, urutwareho, cyangwa utwandikire — twishimira kukumva."],
+
+/* ---------- contact ---------- */
+"We answer. 24/7.":["Nous répondons. 24 h/24.","Turasubiza. 24/7."],
+"Riders, drivers, partners, press — one team in Kigali, on the line day and night, in English and Kinyarwanda.":["Passagers, chauffeurs, partenaires, presse — une seule équipe à Kigali, en ligne jour et nuit, en anglais et en kinyarwanda.","Abagenzi, abashoferi, abafatanyabikorwa, itangazamakuru — itsinda rimwe i Kigali, ku murongo ku manywa na nijoro, mu Cyongereza no mu Kinyarwanda."],
+"Trips, payments, lost items, driver questions.":["Trajets, paiements, objets perdus, questions chauffeurs.","Ingendo, kwishyura, ibintu byazimiye, ibibazo by'abashoferi."],
+"During any trip, one tap on the in-app SOS.":["Pendant tout trajet, un geste sur le SOS de l'app.","Mu rugendo urwo ari rwo rwose, kanda SOS muri App."],
+"Email":["E-mail","Imeyili"],
+"Write to us":["Écrivez-nous","Twandikire"],
+"Send a message":["Envoyer un message","Ohereza ubutumwa"],
+"We reply within one working day. For anything urgent about a live trip, call +250 796 698 668 instead.":["Nous répondons sous un jour ouvré. Pour toute urgence sur un trajet en cours, appelez plutôt le +250 796 698 668.","Dusubiza mu munsi umwe w'akazi. Ku kibazo cyihutirwa ku rugendo rurimo gukorwa, hamagara +250 796 698 668."],
+"Name":["Nom","Izina"],
+"Topic":["Sujet","Ingingo"],
+"Rider support":["Assistance passager","Ubufasha ku mugenzi"],
+"Driver support":["Assistance chauffeur","Ubufasha ku mushoferi"],
+"Partnerships":["Partenariats","Ubufatanye"],
+"Press":["Presse","Itangazamakuru"],
+"Other":["Autre","Ikindi"],
+"Message":["Message","Ubutumwa"],
+"Send message":["Envoyer le message","Ohereza ubutumwa"],
+"Find us across Kigali":["Trouvez-nous dans tout Kigali","Dusange muri Kigali hose"],
+"Request a Spark from anywhere in Gasabo, Kicukiro or Nyarugenge.":["Demandez un Spark depuis n'importe où à Gasabo, Kicukiro ou Nyarugenge.","Saba Spark aho uri hose muri Gasabo, Kicukiro cyangwa Nyarugenge."],
+"Business district & residential areas":["Quartier d'affaires & zones résidentielles","Ahakorerwa ubucuruzi n'aho abantu batuye"],
+"Airport & southern neighborhoods":["Aéroport & quartiers sud","Ikibuga cy'indege n'uduce two mu majyepfo"],
+"City centre & downtown":["Centre-ville","Umujyi rwagati"],
+"Active":["Actif","Hirakora"],
+"Airport pickups available with Spark EV — schedule in the app.":["Prises en charge à l'aéroport avec Spark EV — planifiez dans l'app.","Gufatirwa ku kibuga cy'indege bikorwa na Spark EV — teganya muri App."],
+"Replies within a day":["Réponse sous un jour","Dusubiza mu munsi umwe"],
+
+/* ---------- 404 & misc ---------- */
+"This page took a wrong turn.":["Cette page a pris un mauvais virage.","Iyi paji yayobye."],
+"The address doesn't exist — but the network is still running. Let's get you back on the road.":["Cette adresse n'existe pas — mais le réseau tourne toujours. Remettons-vous en route.","Iyi aderesi ntibaho — ariko urusobe ruracyakora. Reka tugusubize mu nzira."],
+"Back to home":["Retour à l'accueil","Subira ahabanza"],
+"Contact support":["Contacter l'assistance","Vugana n'ubufasha"],
+"Legal":["Mentions légales","Amategeko"],
+"Legal documents are provided in English.":["Les documents juridiques sont fournis en anglais.","Inyandiko z'amategeko zitangwa mu Cyongereza."],
+"Approved drivers start within 48 hours · Application takes 5–10 minutes":["Chauffeurs approuvés en route sous 48 h · Candidature en 5–10 minutes","Abemewe batangira mu masaha 48 · Gusaba bifata iminota 5–10"],
+"Driver app:":["App chauffeur :","App y'umushoferi:"],
+
+/* ---------- phone mockup (home) ---------- */
+"The app":["L'app","App"],
+"Your whole trip, in one tap":["Tout votre trajet, en un geste","Urugendo rwawe rwose, ukanze rimwe"],
+"Set your destination, see the exact fare and driver before you confirm, then follow every metre live. Book a ride or apply to drive — it all lives in the Spark app.":["Indiquez votre destination, voyez le tarif exact et le chauffeur avant de confirmer, puis suivez chaque mètre en direct. Réservez une course ou postulez pour conduire — tout est dans l'app Spark.","Shyiramo aho ujya, ubone igiciro nyacyo n'umushoferi mbere yo kwemeza, hanyuma ukurikirane buri metero. Saba urugendo cyangwa usabe gutwara — byose biri muri App ya Spark."],
+"Live tracking":["Suivi en direct","Gukurikirana ako kanya"],
+"Pickup · now":["Départ · maintenant","Aho uva · nonaha"],
+
+/* ---------- application forms (drivers) ---------- */
+"Two ways to join Spark":["Deux façons de rejoindre Spark","Uburyo bubiri bwo kwinjira muri Spark"],
+"Car owners join the platform for free. Moto riders join our electric fleet on drive-to-own — pick your path below.":["Les propriétaires de voiture rejoignent la plateforme gratuitement. Les conducteurs de moto rejoignent notre flotte électrique en location-acquisition — choisissez votre voie ci-dessous.","Ba nyir'imodoka binjira ku rubuga ku buntu. Abatwara moto binjira mu binyabiziga byacu by'amashanyarazi ku buryo bwo kuzabigira ibyabo — hitamo inzira yawe hasi."],
+"Car owners — join free":["Propriétaires — gratuit","Ba nyir'imodoka — ku buntu"],
+"Free to join":["Adhésion gratuite","Kwinjira ku buntu"],
+"Own an approved electric car? Register on the Spark platform for free and keep 100% of every fare.":["Vous avez une voiture électrique approuvée ? Inscrivez-vous gratuitement sur Spark et gardez 100 % de chaque course.","Ufite imodoka y'amashanyarazi yemewe? Iyandikishe ku rubuga rwa Spark ku buntu kandi ugumane 100% bya buri rugendo."],
+"Moto riders join here →":["Les conducteurs de moto s'inscrivent ici →","Abatwara moto binjirira hano →"],
+"Personal details":["Détails personnels","Umwirondoro"],
+"Age":["Âge","Imyaka"],
+"District":["District","Akarere"],
+"Select your district":["Sélectionnez votre district","Hitamo akarere kawe"],
+"Contact (phone/WhatsApp)":["Contact (téléphone/WhatsApp)","Uko bakugeraho (telefoni/WhatsApp)"],
+"Vehicle details":["Détails du véhicule","Amakuru y'ikinyabiziga"],
+"Car make and model":["Marque et modèle","Ubwoko n'icyiciro cy'imodoka"],
+"Car age":["Âge du véhicule","Imyaka y'imodoka"],
+"Select car age":["Sélectionnez l'âge","Hitamo imyaka"],
+"1 year":["1 an","Umwaka 1"],"2 years":["2 ans","Imyaka 2"],"3 years":["3 ans","Imyaka 3"],
+"4 years":["4 ans","Imyaka 4"],"6+ years":["6+ ans","Imyaka 6+"],
+"Insurance type":["Type d'assurance","Ubwoko bw'ubwishingizi"],
+"Select insurance type":["Sélectionnez le type","Hitamo ubwoko"],
+"3rd Party":["Tiers","Undi muntu"],"Comprehensive":["Tous risques","Busesuye"],
+"Upload images":["Ajouter des photos","Ohereza amafoto"],
+"Add clear photos (PNG/JPG)":["Ajoutez des photos nettes (PNG/JPG)","Ongeraho amafoto asobanutse (PNG/JPG)"],
+"You can upload multiple":["Vous pouvez en ajouter plusieurs","Ushobora kohereza menshi"],
+"Apply to join Spark Taxi now":["Rejoindre Spark Taxi maintenant","Saba kwinjira muri Spark Taxi nonaha"],
+"Join our electric moto-taxi fleet":["Rejoignez notre flotte de moto-taxis électriques","Injira mu binyabiziga byacu bya moto-taxi y'amashanyarazi"],
+"Lease a brand-new electric moto from Spark at RWF 7,500/day — insurance, gear and training included, yours in about two years.":["Louez une moto électrique neuve chez Spark à 7 500 RWF/jour — assurance, équipement et formation inclus, à vous en deux ans environ.","Kodesha moto nshya y'amashanyarazi kwa Spark ku 7.500 RWF ku munsi — ubwishingizi, ibikoresho n'amahugurwa birimo, iba iyawe mu myaka igera kuri ibiri."],
+"Driving experience":["Expérience de conduite","Uburambe mu gutwara"],
+"Years with driver license":["Années de permis","Imyaka ufite uruhushya"],
+"Years driving mototaxi":["Années de moto-taxi","Imyaka utwara moto-taxi"],
+"Prefer to talk? Call +250 796 698 668 — approved riders start within 48 hours.":["Vous préférez parler ? Appelez le +250 796 698 668 — les conducteurs approuvés démarrent sous 48 h.","Uhisemo kuvugana? Hamagara +250 796 698 668 — abemewe batangira mu masaha 48."],
+"Submit application":["Soumettre la candidature","Ohereza ubusabe"],
+
+/* ---------- fleet tab data (dynamically swapped) ---------- */
+"Electric sedan":["Berline électrique","Sedan y'amashanyarazi"],
+"Electric crossover":["Crossover électrique","Crossover y'amashanyarazi"],
+"Spark EV Sedan":["Spark EV Berline","Spark EV Sedan"],
+"Spark EV Crossover":["Spark EV Crossover","Spark EV Crossover"],
+"A quiet, professional ride for business trips, longer routes and the airport run.":["Un trajet calme et professionnel pour les déplacements pro, les longues distances et l'aéroport.","Urugendo rutuje, rw'umwuga ku ngendo z'akazi, ndende n'iz'ikibuga cy'indege."],
+"More space, same silence — room for families, groups and luggage without a drop of petrol.":["Plus d'espace, le même silence — de la place pour familles, groupes et bagages, sans une goutte d'essence.","Umwanya munini, gutuza kumwe — umwanya w'imiryango, amatsinda n'imizigo nta tonyanga rya lisansi."],
+"~2 years":["~2 ans","~imyaka 2"],
+"5 years":["5 ans","imyaka 5"],
+"Insurance · maintenance · gear":["Assurance · entretien · équipement","Ubwishingizi · gusana · ibikoresho"],
+"Insurance · servicing · training":["Assurance · entretien · formation","Ubwishingizi · servisi · amahugurwa"],
+"Business & airport":["Affaires & aéroport","Ubucuruzi n'ikibuga cy'indege"],
+"Families & groups":["Familles & groupes","Imiryango n'amatsinda"]
+};
+
+/* Multi-node headings (innerHTML-capable) */
+window.SPARK_HTML = {
+  heroH1: {
+    en: '<em class="grad">Electric</em> mobility,<br>built for Kigali.',
+    fr: 'La mobilité <em class="grad">électrique</em>,<br>pensée pour Kigali.',
+    rw: 'Ingendo <em class="grad">z\u2019amashanyarazi</em>,<br>zubakiwe Kigali.'
+  },
+  noHaggle: {
+    en: 'No haggling.<br>No surprises.',
+    fr: 'Sans négociation.<br>Sans surprises.',
+    rw: 'Nta gucuruzanya.<br>Nta gutungurwa.'
+  }
+};
+
+/* Placeholders (matched by English placeholder text) */
+window.SPARK_PH = {
+"Email address":["Adresse e-mail","Aderesi imeyili"],
+"Jean Bosco":["Jean Bosco","Jean Bosco"],
+"+250 7xx xxx xxx":["+250 7xx xxx xxx","+250 7xx xxx xxx"],
+"Experience, availability, questions…":["Expérience, disponibilités, questions…","Uburambe, igihe uboneka, ibibazo…"],
+"Your name":["Votre nom","Izina ryawe"],
+"you@example.com":["vous@exemple.com","wowe@urugero.com"],
+"How can we help?":["Comment pouvons-nous aider ?","Twagufasha dute?"],
+"Full name":["Nom complet","Amazina yombi"],
+"Age":["Âge","Imyaka"],
+"e.g. Nissan Leaf":["ex. Nissan Leaf","urugero. Nissan Leaf"],
+"e.g. 4":["ex. 4","urugero. 4"],
+"e.g. 2":["ex. 2","urugero. 2"]
+};
+
+/* JS-generated messages */
+window.SPARK_MSG = {
+msgSentH:["Message sent","Message envoyé","Ubutumwa bwoherejwe"],
+msgSentP:["Thank you — we reply within one working day. For anything urgent, call +250 796 698 668.","Merci — nous répondons sous un jour ouvré. En cas d'urgence, appelez le +250 796 698 668.","Murakoze — dusubiza mu munsi umwe w'akazi. Ku byihutirwa, hamagara +250 796 698 668."],
+appRecvH:["Application received","Candidature reçue","Ubusabe bwakiriwe"],
+appRecvP:["Thank you — our driver team will call you back, usually within one working day.","Merci — notre équipe chauffeurs vous rappellera, en général sous un jour ouvré.","Murakoze — itsinda ry'abashoferi rizaguhamagara, akenshi mu munsi umwe w'akazi."],
+newsOk:["You're on the list ✓","Vous êtes sur la liste ✓","Wanditswe ku rutonde ✓"]
+};
+</script>
+<script>/* Spark Mobility — shared behaviour (vanilla, zero dependencies) */
+(function () {
+"use strict";
+
+
+/* ---------------- Sticky nav ---------------- */
+var hd = document.querySelector("header.top");
+if (hd) addEventListener("scroll", function () { hd.classList.toggle("on", scrollY > 10); }, { passive: true });
+
+/* ---------------- Mobile menu (burger v2) ---------------- */
+var mbtn = document.getElementById("mbtn"), mpanel = document.getElementById("mpanel");
+function setMenu(open) {
+  if (!mbtn || !mpanel) return;
+  mbtn.classList.toggle("open", open);
+  mpanel.classList.toggle("open", open);
+  mbtn.setAttribute("aria-expanded", String(open));
+  mbtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  mpanel.setAttribute("aria-hidden", String(!open));
+  document.body.classList.toggle("menu-open", open);
+  if (open) { var f = mpanel.querySelector("a"); if (f) f.focus({ preventScroll: true }); }
+}
+if (mbtn && mpanel) {
+  mbtn.addEventListener("click", function () { setMenu(!mpanel.classList.contains("open")); });
+  mpanel.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { setMenu(false); }); });
+  addEventListener("keydown", function (e) { if (e.key === "Escape" && mpanel.classList.contains("open")) { setMenu(false); mbtn.focus(); } });
+  addEventListener("resize", function () { if (innerWidth > 1000) setMenu(false); }, { passive: true });
+}
+
+/* ---------------- Reveal on scroll ---------------- */
+var io = new IntersectionObserver(function (es) {
+  es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+document.querySelectorAll(".rv").forEach(function (el) {
+  var d = el.getAttribute("data-d"); if (d) el.style.transitionDelay = d * 90 + "ms";
+  io.observe(el);
+});
+
+/* ---------------- Count-up numbers ---------------- */
+var co = new IntersectionObserver(function (es) {
+  es.forEach(function (e) {
+    if (!e.isIntersecting) return; co.unobserve(e.target);
+    var el = e.target, end = +el.getAttribute("data-count"), t0 = performance.now(), D = 1300;
+    (function f(t) {
+      var p = Math.min(1, (t - t0) / D), v = Math.round(end * (1 - Math.pow(1 - p, 3)));
+      el.textContent = v.toLocaleString(); if (p < 1) requestAnimationFrame(f);
+    })(t0);
+  });
+}, { threshold: 0.6 });
+document.querySelectorAll("[data-count]").forEach(function (el) { co.observe(el); });
+
+/* ---------------- Videos: play only when visible ---------------- */
+var vio = new IntersectionObserver(function (es) {
+  es.forEach(function (e) {
+    var v = e.target;
+    if (e.isIntersecting) { var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); }
+    else v.pause();
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll("video[data-auto]").forEach(function (v) { vio.observe(v); });
+
+/* ---------------- Generic tab groups ---------------- */
+document.querySelectorAll("[data-tabs]").forEach(function (group) {
+  var tabs = [].slice.call(group.querySelectorAll("[data-v]"));
+  var scope = document.querySelector(group.getAttribute("data-tabs")) || document;
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      var i = +t.getAttribute("data-v");
+      tabs.forEach(function (x) { var on = x === t; x.classList.toggle("on", on); x.setAttribute("aria-selected", on); });
+      scope.querySelectorAll("[data-tabimg]").forEach(function (im, j) { im.classList.toggle("show", j === i); });
+      var data = window.__tabdata && window.__tabdata[group.id];
+      if (data && data[i]) Object.keys(data[i]).forEach(function (k) {
+        var n = scope.querySelector('[data-f="' + k + '"]');
+        if (n) { delete n.dataset.en; n.textContent = data[i][k]; }
+      });
+      // keep dynamically-swapped values translated
+      if (window.__lang && window.__lang !== "en" && window.__applyLang)
+        window.__applyLang(window.__lang, scope.nodeType ? scope : document.body);
+    });
+  });
+});
+
+/* ---------------- FAQ: close siblings ---------------- */
+document.querySelectorAll(".faq").forEach(function (d) {
+  d.addEventListener("toggle", function () {
+    if (d.open) d.parentElement.querySelectorAll(".faq[open]").forEach(function (o) { if (o !== d) o.open = false; });
+  });
+});
+
+/* ---------------- Earnings calculator ---------------- */
+if (document.getElementById("cPlan")) {
+  // fee = daily lease/partner fee, days = paid days/week, and sensible defaults per plan
+  var plans = {
+    moto:  { fee: 7500,  days: 6, trips: 16, fare: 1500, tripMin: 6,  tripMax: 34, fareMin: 600,  fareMax: 3500 },
+    sedan: { fee: 30000, days: 6, trips: 12, fare: 5000, tripMin: 5,  tripMax: 24, fareMin: 2000, fareMax: 12000 },
+    cross: { fee: 40000, days: 6, trips: 12, fare: 6000, tripMin: 5,  tripMax: 24, fareMin: 2500, fareMax: 14000 },
+    own:   { fee: 1000,  days: 7, trips: 14, fare: 2500, tripMin: 6,  tripMax: 30, fareMin: 800,  fareMax: 8000 }
+  };
+  var $p = document.getElementById("cPlan"), $t = document.getElementById("cTrips"), $f = document.getElementById("cFare"),
+      $oT = document.getElementById("oTrips"), $oF = document.getElementById("oFare"),
+      $g = document.getElementById("rGross"), $l = document.getElementById("rLease"), $d = document.getElementById("rDay"),
+      $w = document.getElementById("rWeek"), $m = document.getElementById("rMonth"), $pk = document.getElementById("rPeak");
+  var fmt = function (n) { return "RWF " + Math.max(0, Math.round(n)).toLocaleString(); };
+  var calc = function () {
+    var p = plans[$p.value], trips = +$t.value, fare = +$f.value;
+    var gross = trips * fare, net = gross - p.fee, week = net * p.days;
+    $oT.textContent = trips; $oF.textContent = fare.toLocaleString();
+    $g.textContent = fmt(gross); $l.textContent = "− " + fmt(p.fee);
+    $d.textContent = fmt(net); $w.textContent = fmt(week); $m.textContent = fmt(week * 4.33);
+    // colour the net red-free: if it ever goes negative, show a gentle hint instead of a scary 0
+    $d.style.color = net <= 0 ? "var(--mut)" : "";
+    if ($pk) $pk.style.display = gross >= 25000 ? "block" : "none";
+  };
+  // when the plan changes, reset the sliders to that vehicle's realistic range + defaults
+  var applyPlan = function () {
+    var p = plans[$p.value];
+    $t.min = p.tripMin; $t.max = p.tripMax; $t.value = p.trips;
+    $f.min = p.fareMin; $f.max = p.fareMax; $f.step = p.fareMax > 8000 ? 250 : 100; $f.value = p.fare;
+    calc();
+  };
+  $p.addEventListener("change", applyPlan);
+  [$t, $f].forEach(function (el) { el.addEventListener("input", calc); });
+  applyPlan();
+}
+
+/* ---------------- File upload feedback ---------------- */
+document.querySelectorAll(".filegrid input[type=file]").forEach(function (inp) {
+  inp.addEventListener("change", function () {
+    var wrap = inp.closest(".filegrid"), small = wrap && wrap.querySelector("small"), b = wrap && wrap.querySelector("b");
+    if (!wrap) return;
+    var n = inp.files ? inp.files.length : 0;
+    if (n > 0) {
+      wrap.classList.add("has");
+      if (b) b.textContent = n === 1 ? "1 photo selected" : n + " photos selected";
+      if (small) small.textContent = "Tap to change your selection";
+    } else {
+      wrap.classList.remove("has");
+      if (b) b.textContent = "Add clear photos";
+      if (small) small.textContent = "PNG or JPG · you can upload multiple";
+    }
+  });
+});
+
+/* ---------------- Live forms → /api/lead (mailto fallback offline) ---------------- */
+function msg(key, fallback) {
+  var lang = window.__lang || "en", m = (window.SPARK_MSG || {})[key];
+  if (!m) return fallback;
+  var i = lang === "fr" ? 1 : lang === "rw" ? 2 : 0;
+  return m[i] || m[0] || fallback;
+}
+function doneTemplate(type) {
+  var h = type === "driver" ? msg("appRecvH", "Application received") : msg("msgSentH", "Message sent");
+  var p = type === "driver"
+    ? msg("appRecvP", "Thank you — our driver team will call you back, usually within one working day.")
+    : msg("msgSentP", "Thank you — we reply within one working day. For anything urgent, call +250 796 698 668.");
+  return '<div class="form-done"><span class="dic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 13l4 4L19 7"/></svg></span><h3>' + h + "</h3><p>" + p + "</p></div>";
+}
+function payload(f, type) {
+  var o = { type: type };
+  f.querySelectorAll("input,select,textarea").forEach(function (i) { if (i.name) o[i.name.toLowerCase()] = i.value; });
+  return o;
+}
+function mailtoFallback(f, status) {
+  var to = f.getAttribute("data-mailto"), subj = f.getAttribute("data-subject") || "Website enquiry", body = "";
+  f.querySelectorAll("input,select,textarea").forEach(function (i) { if (i.name && i.name !== "company") body += i.name + ": " + i.value + "\n"; });
+  location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subj) + "&body=" + encodeURIComponent(body);
+  status.hidden = false; status.classList.add("ok");
+  status.textContent = "No backend detected in this preview — we opened your email app with the message instead.";
+}
+document.querySelectorAll('form[data-api="driver"],form[data-api="contact"]').forEach(function (f) {
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var type = f.getAttribute("data-api");
+    var btn = f.querySelector('button[type="submit"]');
+    var status = f.querySelector(".form-status");
+    if (!status) { status = document.createElement("p"); status.className = "form-status"; f.appendChild(status); }
+    status.hidden = true; status.classList.remove("ok");
+    if (!btn.querySelector(".spin")) btn.insertAdjacentHTML("beforeend", '<span class="spin" aria-hidden="true"></span>');
+    btn.classList.add("is-loading"); btn.setAttribute("aria-busy", "true");
+    fetch("/api/lead", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload(f, type))
+    }).then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (res) {
+        btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy");
+        if (res.ok && res.j && res.j.ok) {
+          f.setAttribute("aria-live", "polite");
+          f.innerHTML = doneTemplate(type);
+        } else {
+          status.hidden = false;
+          status.textContent = (res.j && res.j.error) || "Something went wrong — please try again.";
+        }
+      })
+      .catch(function () { btn.classList.remove("is-loading"); btn.removeAttribute("aria-busy"); mailtoFallback(f, status); });
+  });
+});
+/* Newsletter */
+document.querySelectorAll('form[data-api="newsletter"]').forEach(function (f) {
+  f.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var input = f.querySelector('input[name="email"]'), btn = f.querySelector("button");
+    if (!input.value || input.value.indexOf("@") < 1) { input.focus(); return; }
+    btn.disabled = true; btn.textContent = "…";
+    fetch("/api/lead", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ type: "newsletter", email: input.value }) })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j.ok) { f.classList.add("done"); f.innerHTML = msg("newsOk", "You're on the list ✓"); }
+        else { btn.disabled = false; btn.textContent = "Subscribe"; input.focus(); }
+      })
+      .catch(function () { f.classList.add("done"); f.innerHTML = "Saved for launch ✓ (offline preview)"; });
+  });
+});
+
+/* ---------------- Service worker (PWA) ---------------- */
+if (location.protocol === "https:" || location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+  var mlnk = document.createElement("link"); mlnk.rel = "manifest"; mlnk.href = "/manifest.webmanifest";
+  document.head.appendChild(mlnk);
+  if ("serviceWorker" in navigator)
+    addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
+}
+
+/* ---------------- Scroll progress (JS fallback) + back to top ---------------- */
+var pg = document.querySelector(".pgbar"), toTop = document.getElementById("toTop");
+var pgNative = CSS && CSS.supports && CSS.supports("animation-timeline: scroll()");
+function onScrollUI() {
+  var max = document.documentElement.scrollHeight - innerHeight;
+  if (pg && !pgNative) pg.style.transform = "scaleX(" + (max > 0 ? Math.min(1, scrollY / max) : 0) + ")";
+  if (toTop) toTop.classList.toggle("show", scrollY > 640);
+}
+addEventListener("scroll", onScrollUI, { passive: true }); onScrollUI();
+if (toTop) toTop.addEventListener("click", function () { scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); });
+
+/* ---------------- i18n: EN / Français / Kinyarwanda (full content) ----------------
+   Dictionaries live in i18n.js: SPARK_T (text), SPARK_HTML (headings),
+   SPARK_PH (placeholders), SPARK_MSG (JS messages). Index 0 = fr, 1 = rw.
+   Strategy: on first switch away from EN, snapshot each element's English text
+   into data-en; translate by exact-match lookup; restore from data-en for EN. */
+var IDX = { fr: 0, rw: 1 };
+var chromeKeys = { // keyed chrome bits that repeat/need stability
+  ride:"Ride", drivers:"Drivers", fleet:"Fleet", safety:"Safety", impact:"Impact",
+  about:"About", contact:"Contact", getapp:"Get the app", becomedriver:"Become a driver",
+  support:"Support", emergency:"Emergency", fride:"Ride", fdrive:"Drive",
+  fcompany:"Company", subscribe:"Subscribe", emailph:"Email address"
+};
+var T  = window.SPARK_T  || {};
+var TH = window.SPARK_HTML || {};
+var PH = window.SPARK_PH || {};
+
+function trans(en, lang) { // English string -> target, or null
+  if (lang === "en") return null;
+  var row = T[en]; if (!row) return null;
+  var v = row[IDX[lang]]; return (v && v.length) ? v : null;
+}
+
+// Leaf elements whose single text node we translate directly.
+var LEAF = "h1,h2,h3,h4,p,q,summary,label,option,small,b,em,span,div,button,a,li,th,td,figcaption,strong";
+
+function applyLang(lang, root) {
+  root = root || document.body;
+  var scoped = root !== document.body;
+
+  // 1) keyed chrome (data-i18n) — stable, keeps nav/menu/footer aligned
+  root.querySelectorAll("[data-i18n]").forEach(function (el) {
+    var k = el.getAttribute("data-i18n"), en = chromeKeys[k];
+    if (!en) return;
+    if (lang === "en") { el.textContent = en; return; }
+    var row = T[en]; if (row && row[IDX[lang]]) el.textContent = row[IDX[lang]];
+  });
+
+  // 2) innerHTML headings (data-i18n-html)
+  root.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+    var k = el.getAttribute("data-i18n-html"), m = TH[k]; if (!m) return;
+    el.innerHTML = m[lang] || m.en;
+  });
+
+  // 3) placeholders (data-i18n-ph keyed + generic by English text)
+  root.querySelectorAll("input[placeholder],textarea[placeholder]").forEach(function (el) {
+    if (!el.dataset.enPh) el.dataset.enPh = el.getAttribute("placeholder") || "";
+    var en = el.dataset.enPh;
+    if (lang === "en") { if (en) el.setAttribute("placeholder", en); return; }
+    var row = PH[en]; if (row && row[IDX[lang]]) el.setAttribute("placeholder", row[IDX[lang]]);
+  });
+
+  // 4) general visible text — leaf elements only, skip chrome/no-translate zones
+  root.querySelectorAll(LEAF).forEach(function (el) {
+    if (el.hasAttribute("data-i18n") || el.hasAttribute("data-i18n-html")) return;
+    if (el.closest("[data-no-i18n],.legal,script,style,code,pre")) return;
+    // only elements whose content is a single text node (leaf), to avoid clobbering children
+    if (el.children.length !== 0) return;
+    var raw = el.textContent; if (!raw) return;
+    var en = el.dataset.en != null ? el.dataset.en : raw.trim();
+    if (!en) return;
+    if (lang === "en") { if (el.dataset.en != null) el.textContent = el.dataset.en; return; }
+    var t = trans(en, lang);
+    if (t) { if (el.dataset.en == null) el.dataset.en = en; el.textContent = t; }
+  });
+
+  if (!scoped) {
+    try { localStorage.setItem("spark-lang", lang); } catch (e) {}
+    document.documentElement.setAttribute("lang", lang);
+    // cache flag inner-SVG markup per language from the menu once
+    if (!window.__flags) {
+      window.__flags = {};
+      document.querySelectorAll(".lmenu button[data-lang]").forEach(function (b) {
+        var f = b.querySelector(".flag"); if (f) window.__flags[b.getAttribute("data-lang")] = f.innerHTML;
+      });
+    }
+    document.querySelectorAll(".lmenu button[data-lang]").forEach(function (b) {
+      var l = b.getAttribute("data-lang");
+      b.classList.toggle("on", l === lang);
+      b.setAttribute("aria-selected", String(l === lang));
+    });
+    var codes = { en: "EN", fr: "FR", rw: "RW" };
+    document.querySelectorAll(".lswitch .lcurrent").forEach(function (cur) {
+      var f = cur.querySelector(".flag"), code = cur.querySelector(".lcode");
+      if (f && window.__flags[lang]) f.innerHTML = window.__flags[lang];
+      if (code) code.textContent = codes[lang] || "EN";
+    });
+    window.__lang = lang;
+  }
+}
+window.__applyLang = applyLang;
+
+/* Language dropdown: open/close + select */
+document.querySelectorAll(".lswitch").forEach(function (sw) {
+  var cur = sw.querySelector(".lcurrent");
+  if (cur) {
+    cur.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      var willOpen = !sw.classList.contains("open");
+      // close any other open switchers first
+      document.querySelectorAll(".lswitch.open").forEach(function (o) { if (o !== sw) o.classList.remove("open"); });
+      sw.classList.toggle("open", willOpen);
+      cur.setAttribute("aria-expanded", String(willOpen));
+    });
+  }
+  sw.querySelectorAll(".lmenu button[data-lang]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      applyLang(btn.getAttribute("data-lang"));
+      sw.classList.remove("open");
+      if (cur) cur.setAttribute("aria-expanded", "false");
+    });
+  });
+});
+// outside click / tap closes the dropdown (ignore clicks inside any .lswitch)
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.closest && e.target.closest(".lswitch")) return;
+  document.querySelectorAll(".lswitch.open").forEach(function (sw) {
+    sw.classList.remove("open");
+    var c = sw.querySelector(".lcurrent"); if (c) c.setAttribute("aria-expanded", "false");
+  });
+});
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") document.querySelectorAll(".lswitch.open").forEach(function (sw) {
+    sw.classList.remove("open");
+    var c = sw.querySelector(".lcurrent"); if (c) c.setAttribute("aria-expanded", "false");
+  });
+});
+(function () {
+  var saved = "en";
+  try { saved = localStorage.getItem("spark-lang") || "en"; } catch (e) {}
+  window.__lang = saved;
+  applyLang(saved); // always sync the current-flag display
+})();
+
+/* ---------------- Year ---------------- */
+document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
+})();
+</script>
 </body>
 </html>

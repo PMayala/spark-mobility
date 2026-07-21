@@ -298,11 +298,11 @@ function applyLang(lang, root) {
   if (!scoped) {
     try { localStorage.setItem("spark-lang", lang); } catch (e) {}
     document.documentElement.setAttribute("lang", lang);
-    // cache flag markup per language from the menu once
+    // cache flag inner-SVG markup per language from the menu once
     if (!window.__flags) {
       window.__flags = {};
       document.querySelectorAll(".lmenu button[data-lang]").forEach(function (b) {
-        var f = b.querySelector(".flag"); if (f) window.__flags[b.getAttribute("data-lang")] = f.outerHTML;
+        var f = b.querySelector(".flag"); if (f) window.__flags[b.getAttribute("data-lang")] = f.innerHTML;
       });
     }
     document.querySelectorAll(".lmenu button[data-lang]").forEach(function (b) {
@@ -313,7 +313,7 @@ function applyLang(lang, root) {
     var codes = { en: "EN", fr: "FR", rw: "RW" };
     document.querySelectorAll(".lswitch .lcurrent").forEach(function (cur) {
       var f = cur.querySelector(".flag"), code = cur.querySelector(".lcode");
-      if (f && window.__flags[lang]) f.outerHTML = window.__flags[lang];
+      if (f && window.__flags[lang]) f.innerHTML = window.__flags[lang];
       if (code) code.textContent = codes[lang] || "EN";
     });
     window.__lang = lang;
@@ -326,27 +326,38 @@ document.querySelectorAll(".lswitch").forEach(function (sw) {
   var cur = sw.querySelector(".lcurrent");
   if (cur) {
     cur.addEventListener("click", function (e) {
+      e.preventDefault();
       e.stopPropagation();
-      var open = sw.classList.toggle("open");
-      cur.setAttribute("aria-expanded", String(open));
+      var willOpen = !sw.classList.contains("open");
+      // close any other open switchers first
+      document.querySelectorAll(".lswitch.open").forEach(function (o) { if (o !== sw) o.classList.remove("open"); });
+      sw.classList.toggle("open", willOpen);
+      cur.setAttribute("aria-expanded", String(willOpen));
     });
   }
-  sw.querySelectorAll(".lmenu button[data-lang]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      applyLang(b.getAttribute("data-lang"));
+  sw.querySelectorAll(".lmenu button[data-lang]").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      applyLang(btn.getAttribute("data-lang"));
       sw.classList.remove("open");
       if (cur) cur.setAttribute("aria-expanded", "false");
     });
   });
 });
-addEventListener("click", function () {
+// outside click / tap closes the dropdown (ignore clicks inside any .lswitch)
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.closest && e.target.closest(".lswitch")) return;
   document.querySelectorAll(".lswitch.open").forEach(function (sw) {
     sw.classList.remove("open");
     var c = sw.querySelector(".lcurrent"); if (c) c.setAttribute("aria-expanded", "false");
   });
 });
-addEventListener("keydown", function (e) {
-  if (e.key === "Escape") document.querySelectorAll(".lswitch.open").forEach(function (sw) { sw.classList.remove("open"); });
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") document.querySelectorAll(".lswitch.open").forEach(function (sw) {
+    sw.classList.remove("open");
+    var c = sw.querySelector(".lcurrent"); if (c) c.setAttribute("aria-expanded", "false");
+  });
 });
 (function () {
   var saved = "en";
