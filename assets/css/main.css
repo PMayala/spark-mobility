@@ -425,6 +425,7 @@ footer{border-top:1px solid var(--line);padding:64px 0 34px;margin-top:clamp(72p
 
 
 
+
 /* ---------- Home hero & components ---------- */
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;align-items:start}}
