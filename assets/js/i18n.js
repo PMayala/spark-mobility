@@ -497,6 +497,8 @@ window.SPARK_T = {
 "Driver app:":["App chauffeur :","App y'umushoferi:"],
 
 /* ---------- phone mockup (home) ---------- */
+"Menu":["Menu","Menu"],
+"Appearance":["Apparence","Isura"],
 "The app":["L'app","App"],
 "Your whole trip, in one tap":["Tout votre trajet, en un geste","Urugendo rwawe rwose, ukanze rimwe"],
 "Set your destination, see the exact fare and driver before you confirm, then follow every metre live. Book a ride or apply to drive — it all lives in the Spark app.":["Indiquez votre destination, voyez le tarif exact et le chauffeur avant de confirmer, puis suivez chaque mètre en direct. Réservez une course ou postulez pour conduire — tout est dans l'app Spark.","Shyiramo aho ujya, ubone igiciro nyacyo n'umushoferi mbere yo kwemeza, hanyuma ukurikirane buri metero. Saba urugendo cyangwa usabe gutwara — byose biri muri App ya Spark."],

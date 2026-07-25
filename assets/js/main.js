@@ -2,6 +2,28 @@
 (function () {
 "use strict";
 
+/* ---------------- Theme toggle (light / dark) ---------------- */
+(function () {
+  var root = document.documentElement;
+  function current() { return root.getAttribute("data-theme") || "light"; }
+  function setTheme(t) {
+    root.setAttribute("data-theme", t);
+    try { localStorage.setItem("spark-theme", t); } catch (e) {}
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", t === "dark" ? "#0E1116" : "#ffffff");
+  }
+  function toggle() { setTheme(current() === "dark" ? "light" : "dark"); }
+  var t1 = document.getElementById("themeToggle"), t2 = document.getElementById("mThemeToggle");
+  if (t1) t1.addEventListener("click", toggle);
+  if (t2) t2.addEventListener("click", toggle);
+  // follow system changes only if the user hasn't chosen explicitly
+  try {
+    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+      if (!localStorage.getItem("spark-theme")) setTheme(e.matches ? "dark" : "light");
+    });
+  } catch (e) {}
+})();
+
 
 /* ---------------- Sticky nav ---------------- */
 var hd = document.querySelector("header.top");
