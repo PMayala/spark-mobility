@@ -495,6 +495,14 @@ footer{border-top:1px solid var(--line);padding:64px 0 34px;margin-top:clamp(72p
 
 
 
+
+
+
+
+
+
+
+
 /* ---------- Home hero & components ---------- */
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;align-items:start}}
@@ -641,6 +649,19 @@ body.menu-open{overflow:hidden}
 .storeline{margin-top:16px;font-size:13.5px;color:var(--mut);font-weight:500}
 .storeline a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .fld input,.fld select,.fld textarea{font-size:16px} /* prevents iOS focus zoom */
+
+/* ---- Touch-target minimums (mobile UX / accessibility) ---- */
+@media(max-width:1000px){
+  .btn{min-height:46px;padding-top:0;padding-bottom:0}
+  .nright .btn{min-height:44px;padding:0 18px}
+  .news{min-height:52px}
+  .news input{min-height:44px}
+  .news .btn{min-height:42px}
+  .fld input,.fld select{min-height:48px}
+  .lmenu button{min-height:46px}
+  .themetoggle,.mbtn{min-height:44px;min-width:44px}
+  .lcurrent{min-height:40px}
+}
 
 /* =====================================================================
    RESPONSIVE REFINEMENT LAYER
@@ -820,6 +841,58 @@ footer{background:radial-gradient(46% 42% at 100% 0%,rgba(30,136,229,.10),transp
 .legal p{font-size:15px;line-height:1.75;color:var(--body)}
 
 /* ---------- Theme toggle + red accent ---------- */
+/* ---------- About page components ---------- */
+/* journey timeline */
+.jgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:820px){.jgrid{grid-template-columns:1fr;gap:32px}}
+.timeline{position:relative;padding-left:4px}
+.tl-item{position:relative;padding:0 0 30px 30px;border-left:2px solid var(--line)}
+.tl-item:last-child{padding-bottom:0;border-left-color:transparent}
+.tl-dot{position:absolute;left:-8px;top:2px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px var(--blue-t)}
+.tl-dot-next{background:var(--card);border:2px solid var(--blue)}
+.tl-yr{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d);margin-bottom:5px}
+.tl-c b{display:block;font-size:16.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:5px;color:var(--ink)}
+.tl-c p{font-size:14px;color:var(--body);line-height:1.55;max-width:46ch}
+
+/* why-Spark grid */
+.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.whygrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.whygrid{grid-template-columns:1fr}}
+.whycard{border:1px solid var(--line);border-radius:var(--r-l);padding:26px 24px;background:var(--card);transition:.3s var(--e)}
+.whycard:hover{transform:translateY(-4px);border-color:rgba(30,136,229,.3);box-shadow:var(--sh-m)}
+.whycard .ic{width:42px;height:42px;border-radius:12px;background:var(--blue-t);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.whycard .ic svg{width:20px;height:20px;color:var(--blue-d)}
+.whycard h3{font-size:17px;margin-bottom:9px;letter-spacing:-.01em}
+.whycard p{font-size:14px;color:var(--body);line-height:1.55}
+
+/* about stat strip */
+.abStat{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden}
+@media(max-width:720px){.abStat{grid-template-columns:1fr 1fr}}
+.abStat-i{background:var(--card);padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:6px}
+.abStat-i b{font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+.abStat-i b em{font-style:normal;color:var(--blue);font-size:.6em;vertical-align:top}
+.abStat-i span{font-size:13.5px;color:var(--body);font-weight:500;line-height:1.4}
+
+.mvgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.mvgrid{grid-template-columns:1fr}}
+.mvcard{border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(28px,3.5vw,42px);background:var(--card);position:relative;overflow:hidden}
+.mvcard .mvk{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:16px}
+.mvcard p{font-size:clamp(19px,2.3vw,25px);font-weight:500;line-height:1.4;letter-spacing:-.01em;color:var(--ink)}
+.mvcard-blue{background:linear-gradient(150deg,var(--blue),var(--blue-d));border-color:transparent}
+.mvcard-blue .mvk{color:rgba(255,255,255,.75)}
+.mvcard-blue p{color:#fff}
+.mvcard-blue::after{content:"";position:absolute;right:-40px;bottom:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.10)}
+
+.valgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.valgrid{grid-template-columns:1fr}}
+.valcard{border:1px solid var(--line);border-radius:var(--r-l);padding:26px 24px;background:var(--card);transition:.3s var(--e);position:relative}
+.valcard:hover{transform:translateY(-4px);border-color:rgba(30,136,229,.35);box-shadow:var(--sh-m)}
+.valno{display:block;font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.05em;margin-bottom:16px;font-variant-numeric:tabular-nums}
+.valcard h3{font-size:18px;margin-bottom:9px;letter-spacing:-.01em}
+.valcard p{font-size:14px;color:var(--body);line-height:1.55}
+
+/* ---------- Theme toggle + red accent (orig) ---------- */
 /* dark-mode refinements: cards on dark sections need a subtle edge to separate */
 [data-theme="dark"] .sec-dark .plan{border-color:rgba(255,255,255,.09);background:rgba(255,255,255,.02)}
 [data-theme="dark"] .sec-dark .plan.pop{border-color:var(--blue)}
@@ -874,6 +947,9 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 /* 4-tile explore grid */
 
 /* ---------- Fleet vehicle rows (balanced, image-backed) ---------- */
+/* consistent vertical rhythm for the three vehicle blocks */
+.vsec{padding-top:clamp(56px,7vw,88px);padding-bottom:clamp(56px,7vw,88px)}
+.vsec-div{border-top:1px solid var(--line-2)}
 .vrow{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,4.5vw,56px);align-items:stretch}
 .vrow.rev .vpanel{order:-1}
 @media(max-width:900px){.vrow{grid-template-columns:1fr;gap:26px;align-items:start}.vrow.rev .vpanel{order:0}}
@@ -881,10 +957,11 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 .vpanel{display:flex;flex-direction:column;justify-content:center}
 @media(max-width:900px){.vfig{min-height:0;aspect-ratio:16/11}}
 .vfig img{width:100%;height:100%;object-fit:cover}
+.vpanel .lbl{margin-bottom:14px}
 .vpanel h2{font-size:clamp(26px,3vw,36px)}
 .vpanel .incl{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px}
 @media(max-width:520px){.vpanel .incl{grid-template-columns:1fr}}
-.vpanel .incl li{display:flex;gap:9px;font-size:14px;color:#414A55;font-weight:500;line-height:1.4}
+.vpanel .incl li{display:flex;gap:9px;font-size:14px;color:var(--body);font-weight:500;line-height:1.4}
 .vpanel .incl li svg{flex:none;width:16px;height:16px;color:var(--blue);margin-top:1px}
 
 /* ---------- Phone mockup ---------- */
@@ -1012,22 +1089,62 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 
 <section class="phero">
   <div class="wrap">
-    <div class="rv" style="max-width:740px">
+    <div class="rv" style="max-width:820px">
       <span class="lbl kick"><b>//</b> About Spark</span>
-      <h1>We're building the electric backbone of African cities — starting with ours.</h1>
+      <h1>We're building the electric backbone of African cities — <span class="grad">starting with ours</span>.</h1>
       <p class="p-l">Spark Systems Rwanda Ltd runs Kigali's 100% electric ride network: the platform that moves riders, the lease program that puts vehicles in drivers' hands, and the operation that keeps the whole fleet running.</p>
+      <div class="cta-row" style="margin-top:28px">
+        <a class="btn btn-blue" href="/drivers.html">Drive with Spark <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="/impact.html">See our impact</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
+    <div class="abStat rv">
+      <div class="abStat-i"><b>1000<em>+</em></b><span>Drivers on the platform</span></div>
+      <div class="abStat-i"><b>3</b><span>Districts across Kigali</span></div>
+      <div class="abStat-i"><b>100<em>%</em></b><span>Electric fleet</span></div>
+      <div class="abStat-i"><b>24/7</b><span>Support, every day</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec pt0">
+  <div class="wrap split">
+    <div class="media r43 rv"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80" alt="A team working together around a table with laptops" loading="lazy" decoding="async" width="1200" height="800"/><span class="chip c-bl"><span class="dot"></span> Kigali, Rwanda</span></div>
+    <div class="rv" data-d="1">
+      <span class="lbl"><b>//</b> Our story</span>
+      <h2 style="margin:14px 0 16px">Founded in Kigali, for the way Kigali moves.</h2>
+      <p class="p">Spark is an electric mobility company founded in Kigali with a mission to transform urban transportation across Africa. We combine cutting-edge technology with sustainable transport to make every journey cleaner, smarter and more reliable.</p>
+      <p class="p" style="margin-top:14px">Beyond transportation, we empower drivers through professional training, stable earning opportunities, insurance coverage and a real path to owning an electric vehicle — turning a daily shift into a growing business.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec pt0">
+  <div class="wrap mvgrid">
+    <div class="mvcard rv">
+      <span class="mvk">Our mission</span>
+      <p>To provide safe, clean and reliable transportation while creating sustainable earning opportunities for professional drivers.</p>
+    </div>
+    <div class="mvcard mvcard-blue rv" data-d="1">
+      <span class="mvk">Our vision</span>
+      <p>To build Africa's leading electric mobility ecosystem.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec pt0">
+  <div class="wrap">
     <div class="shead">
       <div class="rv"><span class="lbl"><b>//</b> What we operate</span><h2>Three businesses, one network</h2></div>
       <p class="rv" data-d="1">Spark isn't just an app — we own, lease and maintain the vehicles behind it.</p>
     </div>
     <div class="cards c3">
-      <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><h3>Ride-hailing platform</h3><p>A digital platform connecting passengers with verified drivers — upfront fares, GPS tracking, digital payments.</p></div>
+      <div class="card rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><h3>Ride-hailing platform</h3><p>A digital platform connecting passengers with verified drivers — upfront fares, GPS tracking and digital payments.</p></div>
       <div class="card rv" data-d="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M16 15h2"/></svg></span><h3>Operating lease program</h3><p>We own a fleet of electric mototaxis and EVs and lease them to qualified drivers on drive-to-own terms.</p></div>
       <div class="card rv" data-d="2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5.6 4.8L3 17.2V21h3.8l5.9-5.9a4 4 0 0 0 4.8-5.6L14.6 12 12 9.4l2.5-2.9Z"/></svg></span><h3>Fleet management</h3><p>Charging, maintenance and telemetry for every leased vehicle — handled by our own technicians.</p></div>
     </div>
@@ -1035,18 +1152,49 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 </section>
 
 <section class="sec pt0">
-  <div class="wrap split">
-    <div class="media r43 rv"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80" alt="A team working together around a table with laptops" loading="lazy" decoding="async"/><span class="chip c-bl"><span class="dot"></span> Kigali, Rwanda</span></div>
-    <div class="rv" data-d="1">
-      <span class="lbl"><b>//</b> How we work</span>
-      <h2 style="margin:14px 0 16px">Professional. Innovative. Inclusive. Safety-focused.</h2>
-      <p class="p">Four values shape every decision we make — from the vetting every driver clears, to serving riders in both English and Kinyarwanda, to pricing shown in full before anyone books.</p>
-      <div class="list">
-        <div class="lrow"><div><b>Professional</b><small>Credible and trustworthy — trained drivers, maintained vehicles, real support</small></div></div>
-        <div class="lrow"><div><b>Innovative</b><small>Forward-thinking and technology-driven — an electric-first network on our own platform</small></div></div>
-        <div class="lrow"><div><b>Inclusive</b><small>Accessible to all Rwandans — two languages, and a real path to vehicle ownership</small></div></div>
-        <div class="lrow"><div><b>Safety-focused</b><small>Responsible and security-minded — vetted, insured and tracked on every trip</small></div></div>
-      </div>
+  <div class="wrap">
+    <div class="shead">
+      <div class="rv"><span class="lbl"><b>//</b> What we stand for</span><h2>Four values, every decision</h2></div>
+      <p class="rv" data-d="1">From the vetting every driver clears to pricing shown in full before anyone books — these hold us to a standard.</p>
+    </div>
+    <div class="valgrid">
+      <div class="valcard rv"><span class="valno">01</span><h3>Professional</h3><p>Credible and trustworthy. Trained drivers, maintained vehicles and support that actually answers.</p></div>
+      <div class="valcard rv" data-d="1"><span class="valno">02</span><h3>Innovative</h3><p>Forward-thinking and technology-driven — an electric-first network built on our own platform.</p></div>
+      <div class="valcard rv" data-d="2"><span class="valno">03</span><h3>Inclusive</h3><p>Accessible to all Rwandans — served in English and Kinyarwanda, with a real path to ownership.</p></div>
+      <div class="valcard rv" data-d="3"><span class="valno">04</span><h3>Safety-focused</h3><p>Responsible and security-minded — every trip vetted, insured and GPS-tracked from start to finish.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec pt0">
+  <div class="wrap jgrid">
+    <div class="rv">
+      <span class="lbl"><b>//</b> Our journey</span>
+      <h2 style="margin:14px 0 16px;max-width:14ch">From an idea to Kigali's electric network.</h2>
+      <p class="p" style="max-width:40ch">A young company moving fast — here's how far the network has come, and where it's heading.</p>
+    </div>
+    <div class="timeline rv" data-d="1">
+      <div class="tl-item"><span class="tl-dot"></span><div class="tl-yr">2024</div><div class="tl-c"><b>Spark is founded in Kigali</b><p>Built around one idea: clean, reliable transport that also creates real livelihoods.</p></div></div>
+      <div class="tl-item"><span class="tl-dot"></span><div class="tl-yr">Jan 2025</div><div class="tl-c"><b>Electric-only in Kigali</b><p>Only electric motos are licensed for taxi work in the city — and Spark's fleet is 100% electric by design.</p></div></div>
+      <div class="tl-item"><span class="tl-dot"></span><div class="tl-yr">2025</div><div class="tl-c"><b>1,000+ drivers on the platform</b><p>Across all three districts, on drive-to-own leases with training, insurance and gear included.</p></div></div>
+      <div class="tl-item"><span class="tl-dot tl-dot-next"></span><div class="tl-yr">Next</div><div class="tl-c"><b>Beyond Kigali</b><p>Expanding to more Rwandan cities — and building toward Africa's leading electric mobility ecosystem.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec pt0">
+  <div class="wrap">
+    <div class="shead">
+      <div class="rv"><span class="lbl"><b>//</b> Why Spark</span><h2>More than an app — the whole operation</h2></div>
+      <p class="rv" data-d="1">We don't just connect riders and drivers. We own the vehicles, run the charging, and stand behind every trip.</p>
+    </div>
+    <div class="whygrid">
+      <div class="whycard rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></svg></span><h3>100% electric by design</h3><p>Every vehicle in the fleet is electric — zero tailpipe emissions on every single trip, not as an option but as the standard.</p></div>
+      <div class="whycard rv" data-d="1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5.6 4.8L3 17.2V21h3.8l5.9-5.9a4 4 0 0 0 4.8-5.6L14.6 12 12 9.4l2.5-2.9Z"/></svg></span><h3>We own &amp; maintain the fleet</h3><p>Charging, servicing and telemetry are handled by our own technicians — so drivers just drive and riders always get a vehicle that works.</p></div>
+      <div class="whycard rv" data-d="2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M16 15h2"/></svg></span><h3>A real path to ownership</h3><p>Fixed daily payments that already include insurance and maintenance — until the vehicle is fully, legally yours.</p></div>
+      <div class="whycard rv" data-d="3"><span class="ic ic-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M12 8v4M12 15.5v.5"/></svg></span><h3>Safety on every trip</h3><p>Police-checked drivers, GPS-tracked routes, full insurance and one-tap SOS to 112 — built in, always on.</p></div>
+      <div class="whycard rv" data-d="4"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 16 0M4 12v4a2 2 0 0 0 2 2h1v-6H5M20 12v4a2 2 0 0 1-2 2h-1v-6h2"/><path d="M15 20.5c1.5 0 3-.7 3-2.5"/></svg></span><h3>Support that answers</h3><p>A real team in Kigali, 24/7, in English and Kinyarwanda — reachable on +250 796 698 668 for riders and drivers alike.</p></div>
+      <div class="whycard rv" data-d="5"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M9 12l2 2 4-4.5"/></svg></span><h3>Compliant &amp; accountable</h3><p>Operating in line with RURA and RTDA requirements, with clear terms and a privacy policy under Rwandan law.</p></div>
     </div>
   </div>
 </section>

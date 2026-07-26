@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <script>(function(){try{var t=localStorage.getItem('spark-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Safety at Spark — vetted, insured, tracked</title>
-<meta name="description" content="Every Spark driver is police-checked and trained. Every trip is GPS-tracked, insured, and one tap from emergency line 112. Support 24/7 on 6600."/>
+<meta name="description" content="Every Spark driver is police-checked and trained. Every trip is GPS-tracked, insured, and one tap from emergency line 112. Support 24/7 on +250 796 698 668."/>
 <link rel="canonical" href="https://spark-mobility.vercel.app/safety"/>
 <meta name="theme-color" content="#ffffff"/>
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="Spark Mobility"/>
 <meta property="og:title" content="Safety at Spark — vetted, insured, tracked"/>
-<meta property="og:description" content="Every Spark driver is police-checked and trained. Every trip is GPS-tracked, insured, and one tap from emergency line 112. Support 24/7 on 6600."/>
+<meta property="og:description" content="Every Spark driver is police-checked and trained. Every trip is GPS-tracked, insured, and one tap from emergency line 112. Support 24/7 on +250 796 698 668."/>
 <meta property="og:url" content="https://spark-mobility.vercel.app/safety"/>
 <meta property="og:image" content="https://commons.wikimedia.org/wiki/Special:FilePath/High%20Angle%20View%20Of%20Kigali%20City%20Street%20on%20November%2029%2C%202018.%20Emmanuel%20Kwizera.jpg?width=1600"/>
 <meta name="twitter:card" content="summary_large_image"/>
@@ -495,6 +495,14 @@ footer{border-top:1px solid var(--line);padding:64px 0 34px;margin-top:clamp(72p
 
 
 
+
+
+
+
+
+
+
+
 /* ---------- Home hero & components ---------- */
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:end;margin-bottom:clamp(28px,4vw,44px)}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;align-items:start}}
@@ -641,6 +649,19 @@ body.menu-open{overflow:hidden}
 .storeline{margin-top:16px;font-size:13.5px;color:var(--mut);font-weight:500}
 .storeline a{color:var(--blue-d);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .fld input,.fld select,.fld textarea{font-size:16px} /* prevents iOS focus zoom */
+
+/* ---- Touch-target minimums (mobile UX / accessibility) ---- */
+@media(max-width:1000px){
+  .btn{min-height:46px;padding-top:0;padding-bottom:0}
+  .nright .btn{min-height:44px;padding:0 18px}
+  .news{min-height:52px}
+  .news input{min-height:44px}
+  .news .btn{min-height:42px}
+  .fld input,.fld select{min-height:48px}
+  .lmenu button{min-height:46px}
+  .themetoggle,.mbtn{min-height:44px;min-width:44px}
+  .lcurrent{min-height:40px}
+}
 
 /* =====================================================================
    RESPONSIVE REFINEMENT LAYER
@@ -820,6 +841,58 @@ footer{background:radial-gradient(46% 42% at 100% 0%,rgba(30,136,229,.10),transp
 .legal p{font-size:15px;line-height:1.75;color:var(--body)}
 
 /* ---------- Theme toggle + red accent ---------- */
+/* ---------- About page components ---------- */
+/* journey timeline */
+.jgrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:820px){.jgrid{grid-template-columns:1fr;gap:32px}}
+.timeline{position:relative;padding-left:4px}
+.tl-item{position:relative;padding:0 0 30px 30px;border-left:2px solid var(--line)}
+.tl-item:last-child{padding-bottom:0;border-left-color:transparent}
+.tl-dot{position:absolute;left:-8px;top:2px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 4px var(--blue-t)}
+.tl-dot-next{background:var(--card);border:2px solid var(--blue)}
+.tl-yr{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-d);margin-bottom:5px}
+.tl-c b{display:block;font-size:16.5px;font-weight:600;letter-spacing:-.01em;margin-bottom:5px;color:var(--ink)}
+.tl-c p{font-size:14px;color:var(--body);line-height:1.55;max-width:46ch}
+
+/* why-Spark grid */
+.whygrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:900px){.whygrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.whygrid{grid-template-columns:1fr}}
+.whycard{border:1px solid var(--line);border-radius:var(--r-l);padding:26px 24px;background:var(--card);transition:.3s var(--e)}
+.whycard:hover{transform:translateY(-4px);border-color:rgba(30,136,229,.3);box-shadow:var(--sh-m)}
+.whycard .ic{width:42px;height:42px;border-radius:12px;background:var(--blue-t);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.whycard .ic svg{width:20px;height:20px;color:var(--blue-d)}
+.whycard h3{font-size:17px;margin-bottom:9px;letter-spacing:-.01em}
+.whycard p{font-size:14px;color:var(--body);line-height:1.55}
+
+/* about stat strip */
+.abStat{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden}
+@media(max-width:720px){.abStat{grid-template-columns:1fr 1fr}}
+.abStat-i{background:var(--card);padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:6px}
+.abStat-i b{font-size:clamp(30px,4vw,44px);font-weight:600;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+.abStat-i b em{font-style:normal;color:var(--blue);font-size:.6em;vertical-align:top}
+.abStat-i span{font-size:13.5px;color:var(--body);font-weight:500;line-height:1.4}
+
+.mvgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.mvgrid{grid-template-columns:1fr}}
+.mvcard{border:1px solid var(--line);border-radius:var(--r-l);padding:clamp(28px,3.5vw,42px);background:var(--card);position:relative;overflow:hidden}
+.mvcard .mvk{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:16px}
+.mvcard p{font-size:clamp(19px,2.3vw,25px);font-weight:500;line-height:1.4;letter-spacing:-.01em;color:var(--ink)}
+.mvcard-blue{background:linear-gradient(150deg,var(--blue),var(--blue-d));border-color:transparent}
+.mvcard-blue .mvk{color:rgba(255,255,255,.75)}
+.mvcard-blue p{color:#fff}
+.mvcard-blue::after{content:"";position:absolute;right:-40px;bottom:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.10)}
+
+.valgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.valgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.valgrid{grid-template-columns:1fr}}
+.valcard{border:1px solid var(--line);border-radius:var(--r-l);padding:26px 24px;background:var(--card);transition:.3s var(--e);position:relative}
+.valcard:hover{transform:translateY(-4px);border-color:rgba(30,136,229,.35);box-shadow:var(--sh-m)}
+.valno{display:block;font-size:13px;font-weight:700;color:var(--blue);letter-spacing:.05em;margin-bottom:16px;font-variant-numeric:tabular-nums}
+.valcard h3{font-size:18px;margin-bottom:9px;letter-spacing:-.01em}
+.valcard p{font-size:14px;color:var(--body);line-height:1.55}
+
+/* ---------- Theme toggle + red accent (orig) ---------- */
 /* dark-mode refinements: cards on dark sections need a subtle edge to separate */
 [data-theme="dark"] .sec-dark .plan{border-color:rgba(255,255,255,.09);background:rgba(255,255,255,.02)}
 [data-theme="dark"] .sec-dark .plan.pop{border-color:var(--blue)}
@@ -874,6 +947,9 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 /* 4-tile explore grid */
 
 /* ---------- Fleet vehicle rows (balanced, image-backed) ---------- */
+/* consistent vertical rhythm for the three vehicle blocks */
+.vsec{padding-top:clamp(56px,7vw,88px);padding-bottom:clamp(56px,7vw,88px)}
+.vsec-div{border-top:1px solid var(--line-2)}
 .vrow{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(28px,4.5vw,56px);align-items:stretch}
 .vrow.rev .vpanel{order:-1}
 @media(max-width:900px){.vrow{grid-template-columns:1fr;gap:26px;align-items:start}.vrow.rev .vpanel{order:0}}
@@ -881,10 +957,11 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 .vpanel{display:flex;flex-direction:column;justify-content:center}
 @media(max-width:900px){.vfig{min-height:0;aspect-ratio:16/11}}
 .vfig img{width:100%;height:100%;object-fit:cover}
+.vpanel .lbl{margin-bottom:14px}
 .vpanel h2{font-size:clamp(26px,3vw,36px)}
 .vpanel .incl{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:11px 18px;margin-bottom:26px}
 @media(max-width:520px){.vpanel .incl{grid-template-columns:1fr}}
-.vpanel .incl li{display:flex;gap:9px;font-size:14px;color:#414A55;font-weight:500;line-height:1.4}
+.vpanel .incl li{display:flex;gap:9px;font-size:14px;color:var(--body);font-weight:500;line-height:1.4}
 .vpanel .incl li svg{flex:none;width:16px;height:16px;color:var(--blue);margin-top:1px}
 
 /* ---------- Phone mockup ---------- */
@@ -1022,7 +1099,7 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
         <div class="kpi"><b>&lt;2 min</b><span>Support response time</span></div>
       </div>
     </div>
-    <div class="media r43 rv" data-d="1"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1400&q=80" alt="The front of a modern car, studio-lit" loading="lazy" decoding="async"/><span class="chip c-tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M9 12l2 2 4-4.5"/></svg> Every driver verified</span></div>
+    <div class="media r43 rv" data-d="1"><img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1400&q=80" alt="The front of a modern car, studio-lit" loading="lazy" decoding="async" width="1200" height="800"/><span class="chip c-tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4Z"/><path d="M9 12l2 2 4-4.5"/></svg> Every driver verified</span></div>
   </div>
 </section>
 
@@ -1059,7 +1136,7 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 
 <section class="sec pt0">
   <div class="wrap split">
-    <div class="media r45 rv"><img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=1200&q=80" alt="A support agent wearing a headset" loading="lazy" decoding="async"/><span class="chip c-bl"><span class="dot"></span> Answering now</span></div>
+    <div class="media r45 rv"><img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&w=1200&q=80" alt="A support agent wearing a headset" loading="lazy" decoding="async" width="1200" height="800"/><span class="chip c-bl"><span class="dot"></span> Answering now</span></div>
     <div class="rv" data-d="1">
       <span class="lbl"><b>//</b> Always reachable</span>
       <h2 style="margin:14px 0 16px">A human on the line, day and night</h2>
@@ -1077,7 +1154,7 @@ body,header.top,.card,.plan,.feat,.calc,.fcard,.cmp,.tcard,.dlist,.cc,.mpanel,.t
 <section class="sec pt0" id="get">
   <div class="wrap">
     <div class="cta rv">
-      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80" alt="Inside a car at night" loading="lazy" decoding="async"/>
+      <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1600&q=80" alt="Inside a car at night" loading="lazy" decoding="async" width="1200" height="800"/>
       <div class="ov"></div>
       <div class="in">
         <span class="lbl"><b>//</b> Get moving</span>
